@@ -4,9 +4,9 @@
   <groupId>net.astoriane.jcr</groupId>
   <artifactId>crunchyroll-gui</artifactId>
   <packaging>jar</packaging>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.02-beta</version>
   <name>crunchyroll-gui</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/Astoriane/CR-GUI</url>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -52,4 +52,5 @@
       </plugin>
     </plugins>
   </build>
+  <description>Crunchyroll java wrapper</description>
 </project>

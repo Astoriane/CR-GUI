@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class PythonLauncher {
+	
+	private static boolean isTerminated = false;
 
 	private static void getConsoleOutput(Process p) {
 		String s = null;
@@ -34,9 +36,18 @@ public class PythonLauncher {
 		try {
 			Process p = Runtime.getRuntime().exec("python " + pathToScript + " " + args);
 			getConsoleOutput(p);
+			p.waitFor();
+			Thread.sleep(1000);
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	}
+	
+	public static boolean isProcessTerminated() {
+		return isTerminated;
 	}
 
 }

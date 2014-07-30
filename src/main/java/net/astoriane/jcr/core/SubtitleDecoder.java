@@ -14,17 +14,15 @@ public class SubtitleDecoder {
 
 		PythonLauncher.launchPythonScript("lib/crunchy-xml-decoder/decode.py", url + " " + lang);
 
-		File subFile = new File("export"), destFile = new File(
-				"downloads/subs/" + CrunchyUrl.getSeriesFromUrl(url) + ".ass");
+		File subFile = new File("export.ass"), destFile = new File(
+				"downloads/subs/" + CrunchyUrl.getSeriesFromUrl(url).replaceAll("[^a-zA-Z0-9\\.\\-]", " ") + ".ass");
 
 		try {
 			if (subFile.exists() && !destFile.exists())
-				FileUtils.moveFile(subFile, new File("downloads/subs/"
-						+ CrunchyUrl.getSeriesFromUrl(url) + ".ass"));
+				FileUtils.moveFile(subFile, destFile);
 			else if (subFile.exists() && destFile.exists()) {
 				destFile.delete();
-				FileUtils.moveFile(subFile, new File("downloads/subs/"
-						+ CrunchyUrl.getSeriesFromUrl(url) + ".ass"));
+				FileUtils.moveFile(subFile, destFile);
 			}
 
 		} catch (IOException e) {
