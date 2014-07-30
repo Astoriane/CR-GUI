@@ -12,8 +12,10 @@ public class Main {
 	public static void main(String[] args) {
 		CRConfiguration.init();
 
-		if (state == States.STARTUP)
+		if (state == States.STARTUP) {
 			initSubDownloader();
+			state = DownloadSubtitles.state;
+		}
 		
 		while (state == States.IDLE) {
 			initSubDownloader();

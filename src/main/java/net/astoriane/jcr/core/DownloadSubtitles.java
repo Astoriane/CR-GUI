@@ -5,6 +5,7 @@ import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.util.CommandInput;
 import net.astoriane.jcr.util.CrunchyUrl;
 import net.astoriane.jcr.util.PythonLauncher;
+import net.astoriane.jcr.util.SysMessage;
 
 public class DownloadSubtitles {
 
@@ -13,6 +14,8 @@ public class DownloadSubtitles {
 	private static String crUrl;
 
 	public static void init() {
+		state = States.STARTUP;
+
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -27,8 +30,14 @@ public class DownloadSubtitles {
 			crUrl = CommandInput.getCrUrl();
 			if (crUrl.contains("http://") && crUrl.contains(".com")) {
 				state = States.WORKING;
-			} else
+			} else if (crUrl == null || crUrl.isEmpty()) {
 				state = States.EXIT;
+				return;
+			} else {
+				SysMessage.sendMessage("Invalid url entered. " + crUrl
+						+ " Please try again");
+				return;
+			}
 		}
 
 		while (state == States.WORKING) {
@@ -42,7 +51,7 @@ public class DownloadSubtitles {
 			SubtitleDecoder.downloadSubtitles(crUrl, Settings.subtitleLanguage);
 
 			state = States.IDLE;
-			
+
 			return;
 		}
 

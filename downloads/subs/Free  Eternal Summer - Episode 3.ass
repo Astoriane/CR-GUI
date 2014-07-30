@@ -1,0 +1,495 @@
+﻿[Script Info]
+Title: English (US)
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 656
+PlayResY: 368
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,0010,0010,0010,1
+Style: Main,Trebuchet MS,26,&H00FFFFFF,&H0000FFFF,&H00000000,&H00202020,0,0,0,0,100,100,0,0,1,2,2,2,0001,0001,0015,0
+Style: Nar/Thought/Flashback,Trebuchet MS,26,&H00FFFFFF,&H0000FFFF,&H00000000,&H00202020,0,1,0,0,100,100,0,0,1,2,2,2,0001,0001,0015,0
+Style: EpTitle,Arial,22,&H00CA8537,&H000000FF,&H00FDEBE4,&H00FEF0C5,1,0,0,0,100,100,0,0,1,0,1,3,0020,0050,0055,1
+Style: NextEp,Arial,22,&H00CA8537,&H000000FF,&H002E2319,&H00532B43,1,0,0,0,100,100,0,0,1,1,0,8,0020,0020,0125,1
+Style: Festival,Times New Roman,26,&H00985A91,&H000000FF,&H007BF9B9,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,0010,0010,0015,1
+Style: Days,Arial,24,&H004FA02B,&H000000FF,&H007BF9B9,&H00000000,1,0,0,0,100,100,0,0,1,2,0,1,0020,0010,0080,1
+Style: Festival2,Times New Roman,22,&H006F4D58,&H000000FF,&H00ECF7F7,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,0010,0010,0060,1
+Style: Welcome,Arial,26,&H00070E0D,&H000000FF,&H00EBF0F2,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,0010,0010,0020,1
+Style: Basics,Arial,22,&H00070E0D,&H000000FF,&H00EBF0F2,&H00000000,0,0,0,0,100,100,0,0,1,2,0,8,0010,0010,0020,1
+Style: Book,Arial,20,&H0046483B,&H000000FF,&H0096A067,&H00000000,1,0,0,0,100,100,0,0,1,3,0,8,0010,0010,0020,1
+Style: Titles,Arial,24,&H00E0C8F6,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,0010,0010,0020,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.48,0:00:02.87,Main,Nitori,0000,0000,0000,,Rin-senpai...
+Dialogue: 0,0:00:02.87,0:00:06.73,Main,Nitori,0000,0000,0000,,Even though it was only a short period \Nof one year, thank you for everything!
+Dialogue: 0,0:00:07.07,0:00:09.57,Main,Rin,0000,0000,0000,,Why are you making such a big deal of this?
+Dialogue: 0,0:00:09.57,0:00:11.97,Main,Rin,0000,0000,0000,,We're just changing dorm rooms, \Nsince it's a new school year.
+Dialogue: 0,0:00:12.54,0:00:14.36,Main,Nitori,0000,0000,0000,,Yes, but...
+Dialogue: 0,0:00:16.10,0:00:19.28,Main,Rin,0000,0000,0000,,Make sure you keep this place \Nclean, even without me here.
+Dialogue: 0,0:00:19.82,0:00:20.54,Main,Rin,0000,0000,0000,,Later.
+Dialogue: 0,0:00:23.75,0:00:25.00,Main,Rin,0000,0000,0000,,Oh, also...
+Dialogue: 0,0:00:25.29,0:00:26.13,Main,Nitori,0000,0000,0000,,Yes?
+Dialogue: 0,0:00:26.60,0:00:29.00,Main,Rin,0000,0000,0000,,Be sure to take care of this guy, too.
+Dialogue: 0,0:00:29.00,0:00:30.47,Main,Momotarou,0000,0000,0000,,Heya!
+Dialogue: 0,0:00:30.47,0:00:32.23,Main,Momotarou,0000,0000,0000,,Nitori-senpai, Nitori-senpai!
+Dialogue: 0,0:00:32.23,0:00:34.62,Main,Momotarou,0000,0000,0000,,Can I have the top bunk?
+Dialogue: 0,0:00:34.62,0:00:35.57,Main,Nitori,0000,0000,0000,,S-Sure, I guess...
+Dialogue: 0,0:00:35.57,0:00:36.35,Main,Momotarou,0000,0000,0000,,All right!
+Dialogue: 0,0:00:36.35,0:00:37.10,Main,Momotarou,0000,0000,0000,,Yahoo!
+Dialogue: 0,0:00:37.10,0:00:39.92,Nar/Thought/Flashback,Nitori,0000,0000,0000,,I'm glad he joined the swim team, but...
+Dialogue: 0,0:00:39.04,0:00:43.98,Main,Momotarou,0000,0000,0000,,{\an8}Yes! Yes! Yes! Yes!
+Dialogue: 0,0:00:39.92,0:00:43.98,Nar/Thought/Flashback,Nitori,0000,0000,0000,,I honestly don't know how well I'll \Nget along with this first-year.
+Dialogue: 0,0:00:45.17,0:00:45.87,Main,Sousuke,0000,0000,0000,,Rin...
+Dialogue: 0,0:00:46.88,0:00:49.02,Main,Sousuke,0000,0000,0000,,You always preferred the bottom bunk, right?
+Dialogue: 0,0:00:49.02,0:00:52.03,Main,Rin,0000,0000,0000,,Oh, yeah, you prefer \Nthe bottom too, don't you?
+Dialogue: 0,0:00:54.45,0:00:55.11,Main,Both,0000,0000,0000,,Rock, paper—
+Dialogue: 0,0:00:55.90,0:00:56.57,Main,Both,0000,0000,0000,,Huh?
+Dialogue: 0,0:00:56.57,0:00:59.20,Festival,Text,0000,0000,0000,,Iwatobi Festival\N\N{\fs20\c&H475129&}Iwatobi High School Festival
+Dialogue: 0,0:00:56.57,0:00:59.20,Days,Text on Right,0000,0000,0000,,Day 1\N Sports Fair\N Day 2\NCulture Fair
+Dialogue: 0,0:00:57.08,0:00:58.37,Main,Sousuke,0000,0000,0000,,Iwatobi Festival?
+Dialogue: 0,0:00:58.37,0:01:01.08,Main,Rin,0000,0000,0000,,Yeah, Gou sent that over.
+Dialogue: 0,0:01:01.43,0:01:03.71,Main,Sousuke,0000,0000,0000,,It's today, isn't it? You're not going?
+Dialogue: 0,0:01:04.23,0:01:06.00,Main,Rin,0000,0000,0000,,Like I have time for that.
+Dialogue: 0,0:01:06.53,0:01:08.29,Main,Sousuke,0000,0000,0000,,You should go and see her once in a while.
+Dialogue: 0,0:01:08.69,0:01:10.79,Main,Sousuke,0000,0000,0000,,She sounded lonely, talking \Nabout how cold you are.
+Dialogue: 0,0:01:13.34,0:01:15.92,Main,Momotarou,0000,0000,0000,,Did you say something about Gou-san?!
+Dialogue: 0,0:01:16.44,0:01:17.17,Main,,0000,0000,0000,,Huh?
+Dialogue: 0,0:01:17.45,0:01:18.05,Main,Momotarou,0000,0000,0000,,Huh?
+Dialogue: 0,0:01:18.05,0:01:20.66,Main,Rin,0000,0000,0000,,Meet up at the pool right now!
+Dialogue: 0,0:01:19.21,0:01:20.66,Main,Rin,0000,0000,0000,,Can't breathe...
+Dialogue: 0,0:01:21.35,0:01:24.85,Festival2,Sign,0000,0000,0000,,Iwatobi High School Festival
+Dialogue: 0,0:01:21.78,0:01:25.11,Main,Gou,0000,0000,0000,,So, this Iwatobi Festival will be our
+Dialogue: 0,0:01:25.11,0:01:28.10,Main,,0000,0000,0000,,very last chance to obtain new members!
+Dialogue: 0,0:01:28.61,0:01:30.76,Main,Gou,0000,0000,0000,,If we can win this club-versus-club relay race,
+Dialogue: 0,0:01:30.76,0:01:34.12,Main,Gou,0000,0000,0000,,it'll draw more attention to \Nour swim club for sure!
+Dialogue: 0,0:01:34.12,0:01:35.64,Main,Gou,0000,0000,0000,,Let us grasp victory
+Dialogue: 0,0:01:35.64,0:01:39.07,Main,Gou,0000,0000,0000,,along with new members \Ncovered in fabulous muscles!
+Dialogue: 0,0:01:39.31,0:01:40.99,Main,Members,0000,0000,0000,,Yeah!
+Dialogue: 0,0:03:11.74,0:03:14.05,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}The time has come at last
+Dialogue: 0,0:03:14.05,0:03:16.92,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}for Iwatobi High's famed \NClub-Versus-Club Relay Race!
+Dialogue: 0,0:03:14.19,0:03:20.07,EpTitle,Episode Title,0000,0000,0000,,{\fad(462,470)}The Butterfly of Farewell!
+Dialogue: 0,0:03:16.92,0:03:20.38,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}This year's competitors are the Tennis Club, \Nthe Basketball Club, the Rugby Club,
+Dialogue: 0,0:03:20.38,0:03:23.05,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}the Kendo Club, the Judo \NClub, and the Swim Club!
+Dialogue: 0,0:03:23.22,0:03:25.80,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Which club will emerge victorious?!
+Dialogue: 0,0:03:25.80,0:03:27.39,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Get ready to start!
+Dialogue: 0,0:03:27.83,0:03:29.14,Main,Teacher,0000,0000,0000,,On your marks...
+Dialogue: 0,0:03:30.99,0:03:32.14,Main,Teacher,0000,0000,0000,,Get set...
+Dialogue: 0,0:03:34.48,0:03:35.87,Nar/Thought/Flashback,Haruka,0000,0000,0000,,The wind is also alive.
+Dialogue: 0,0:03:38.30,0:03:43.49,Nar/Thought/Flashback,Haruka,0000,0000,0000,,Once you dash forward, it will \Nimmediately bare its fangs and attack.
+Dialogue: 0,0:03:44.71,0:03:46.55,Nar/Thought/Flashback,Haruka,0000,0000,0000,,But there's nothing to fear.
+Dialogue: 0,0:03:47.04,0:03:48.72,Nar/Thought/Flashback,Haruka,0000,0000,0000,,Don't resist the wind.
+Dialogue: 0,0:03:48.72,0:03:50.93,Nar/Thought/Flashback,Haruka,0000,0000,0000,,Thrust your fingers forward \Nand carve an opening.
+Dialogue: 0,0:03:50.93,0:03:52.87,Nar/Thought/Flashback,Haruka,0000,0000,0000,,Then you slide your body \Nthrough that opening.
+Dialogue: 0,0:03:53.62,0:03:56.71,Nar/Thought/Flashback,Haruka,0000,0000,0000,,Moving your arms, your head, your chest...
+Dialogue: 0,0:03:57.62,0:04:00.78,Nar/Thought/Flashback,Gou,0000,0000,0000,,Such perfect form, but...
+Dialogue: 0,0:04:01.34,0:04:04.72,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}In last place is the Swim Club! \NHang in there, Swim Club!
+Dialogue: 0,0:04:01.65,0:04:02.72,Nar/Thought/Flashback,Gou,0000,0000,0000,,He's slow.
+Dialogue: 0,0:04:05.03,0:04:07.30,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}He's falling further and further behind!
+Dialogue: 0,0:04:05.03,0:04:08.97,Main,Hanamura,0000,0000,0000,,Could it be that Nanase-senpai's \Nactually pretty slow on land?
+Dialogue: 0,0:04:09.53,0:04:10.43,Main,Makoto,0000,0000,0000,,Haru!
+Dialogue: 0,0:04:13.13,0:04:14.01,Main,Haruka,0000,0000,0000,,Makoto!
+Dialogue: 0,0:04:13.58,0:04:17.04,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Oh ho! What a smooth baton pass!
+Dialogue: 0,0:04:17.04,0:04:18.79,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Like two bodies in perfect harmony!
+Dialogue: 0,0:04:18.79,0:04:21.25,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}The Swim Club is quickly \Ncatching up to the leaders!
+Dialogue: 0,0:04:21.25,0:04:22.88,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Currently leading is the Basketball Club!
+Dialogue: 0,0:04:21.83,0:04:23.08,Main,Hanamura,0000,0000,0000,,That's amazing! We're in third!
+Dialogue: 0,0:04:22.88,0:04:25.10,Nar/Thought/Flashback,,0000,0000,0000,,{\an8}In second, the Rugby Club! \NIn third, the Swim Club!
+Dialogue: 0,0:04:23.08,0:04:24.82,Main,Gou,0000,0000,0000,,That's Makoto-senpai's power sprinting!
+Dialogue: 0,0:04:25.04,0:04:25.84,Main,Nagisa,0000,0000,0000,,Mako-chan!
+Dialogue: 0,0:04:25.62,0:04:27.62,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}We're coming up on the next baton pass!
+Dialogue: 0,0:04:26.86,0:04:27.62,Main,Makoto,0000,0000,0000,,Nagisa!
+Dialogue: 0,0:04:28.03,0:04:30.87,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}Oh! The Swim Club's kickboard is airbor—
+Dialogue: 0,0:04:31.38,0:04:32.73,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}He caught it!
+Dialogue: 0,0:04:32.73,0:04:35.64,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}But again, the Swim Club \Nhas fallen to last place!
+Dialogue: 0,0:04:35.64,0:04:38.06,Nar/Thought/Flashback,Announcer,0000,0000,0000,,{\an8}He's running hard to catch up! He's fast!
+Dialogue: 0,0:04:36.09,0:04:37.65,Main,Hanamura,0000,0000,0000,,We were so close!
+Dialogue: 0,0:04:37.65,0:04:39.52,Main,,0000,0000,0000,,If only they hadn't dropped the kickboard.
+Dialogue: 0,0:04:38.06,0:04:41.00,Nar/Thought/Flashback,,0000,0000,0000,,{\an8}The Basketball Club and Rugby Club \Ncontinue to dig in harder!
+Dialogue: 0,0:04:40.15,0:04:41.19,Main,Gou,0000,0000,0000,,It's not over yet.
+Dialogue: 0,0:04:41.19,0:04:41.89,Main,Hanamura,0000,0000,0000,,Huh?
+Dialogue: 0,0:04:42.45,0:04:44.14,Nar/Thought/Flashback,Rei,0000,0000,0000,,Wind speed, 1.5 meters per second.
+Dialogue: 0,0:04:44.14,0:04:46.66,Nar/Thought/Flashback,,0000,0000,0000,,Nagisa-kun's height, 165 centimeters.
+Dialogue: 0,0:04:46.66,0:04:48.84,Nar/Thought/Flashback,,0000,0000,0000,,Assuming a speed of \N23 kilometers per hour
+Dialogue: 0,0:04:48.84,0:04:51.35,Nar/Thought/Flashback,Rei,0000,0000,0000,,and a roughly V-shaped kickboard, \Nthe optimal arm angle
+Dialogue: 0,0:04:51.35,0:04:54.85,Nar/Thought/Flashback,,0000,0000,0000,,for him to receive it with \Nminimal wind resistance is...
+Dialogue: 0,0:04:55.56,0:04:56.65,Main,Nagisa,0000,0000,0000,,Rei-chan!
+Dialogue: 0,0:04:56.65,0:04:59.69,Nar/Thought/Flashback,Announcer,0000,0000,0000,,Whoa! That baton pass \Nlooked almost professional!
+Dialogue: 0,0:04:59.69,0:05:02.95,Nar/Thought/Flashback,Announcer,0000,0000,0000,,I thought the Track Club \Nwasn't in today's race...
+Dialogue: 0,0:05:02.95,0:05:04.81,Nar/Thought/Flashback,Announcer,0000,0000,0000,,Who was that?
+Dialogue: 0,0:05:04.81,0:05:06.20,Nar/Thought/Flashback,Announcer,0000,0000,0000,,It's the Swim Club!
+Dialogue: 0,0:05:06.20,0:05:08.20,Main,Nagisa,0000,0000,0000,,Go!
+Dialogue: 0,0:05:07.27,0:05:08.20,Main,MakoHaru,0000,0000,0000,,Rei!
+Dialogue: 0,0:05:08.45,0:05:10.53,Nar/Thought/Flashback,Announcer,0000,0000,0000,,Will it be the Basketball Club?! \NThe Rugby Club? No...
+Dialogue: 0,0:05:10.53,0:05:13.66,Nar/Thought/Flashback,Announcer,0000,0000,0000,,Victory goes to the Swim Club!
+Dialogue: 0,0:05:15.21,0:05:15.98,Welcome,Sign,0000,0000,0000,,Welcome to
+Dialogue: 0,0:05:15.98,0:05:16.71,Welcome,Sign,0000,0000,0000,,the Swim Club!
+Dialogue: 0,0:05:18.81,0:05:20.53,Main,Gou,0000,0000,0000,,Why?!
+Dialogue: 0,0:05:20.53,0:05:23.41,Main,Nagisa,0000,0000,0000,,After all of Rei-chan's hard work!
+Dialogue: 0,0:05:23.41,0:05:25.59,Main,Rei,0000,0000,0000,,Well, no matter how much \Nattention we draw by running,
+Dialogue: 0,0:05:25.59,0:05:27.18,Main,,0000,0000,0000,,we're a {\i1}swim{\i0} club, after all.
+Dialogue: 0,0:05:27.49,0:05:29.62,Main,Makoto,0000,0000,0000,,We've done all we can at this point.
+Dialogue: 0,0:05:29.62,0:05:31.50,Main,,0000,0000,0000,,Now let's just wait patiently.
+Dialogue: 0,0:05:31.50,0:05:34.23,Main,Makoto,0000,0000,0000,,And anyway, starting today...
+Dialogue: 0,0:05:35.44,0:05:36.79,Main,Makoto,0000,0000,0000,,The pool is officially open!
+Dialogue: 0,0:05:38.18,0:05:41.82,Main,Makoto,0000,0000,0000,,Let's shift gears and focus \Non training for prefecturals.
+Dialogue: 0,0:05:42.46,0:05:45.05,Main,Makoto,0000,0000,0000,,Everyone be sure to warm up thoroughly.
+Dialogue: 0,0:05:45.97,0:05:48.21,Main,Makoto,0000,0000,0000,,The water's still pretty cold.
+Dialogue: 0,0:05:48.69,0:05:50.71,Main,Makoto,0000,0000,0000,,And though there's still some time before
+Dialogue: 0,0:05:50.71,0:05:52.94,Main,,0000,0000,0000,,we have to submit our tournament entry...
+Dialogue: 0,0:05:52.94,0:05:54.95,Main,Makoto,0000,0000,0000,,Aside from our individual events, there's...
+Dialogue: 0,0:05:55.22,0:05:56.54,Main,All,0000,0000,0000,,The medley relay!
+Dialogue: 0,0:05:56.54,0:05:57.68,Main,Makoto,0000,0000,0000,,I thought so.
+Dialogue: 0,0:05:58.34,0:05:59.29,Main,Makoto,0000,0000,0000,,How about you, Haru?
+Dialogue: 0,0:05:59.98,0:06:00.96,Main,Haruka,0000,0000,0000,,I only...
+Dialogue: 0,0:06:03.11,0:06:05.55,Main,Haruka,0000,0000,0000,,swim freestyle and relays.
+Dialogue: 0,0:06:08.49,0:06:10.75,Main,Makoto,0000,0000,0000,,So we're in the relay, then.
+Dialogue: 0,0:06:10.75,0:06:11.83,Main,Makoto,0000,0000,0000,,For individual events,
+Dialogue: 0,0:06:11.83,0:06:13.76,Main,,0000,0000,0000,,we'll each choose our own \Nbefore the entry date.
+Dialogue: 0,0:06:14.34,0:06:17.46,Main,Makoto,0000,0000,0000,,As for me, since it's my last year,
+Dialogue: 0,0:06:17.46,0:06:19.06,Main,,0000,0000,0000,,I think I'll try entering the freestyle, too.
+Dialogue: 0,0:06:19.22,0:06:22.52,Main,Nagisa,0000,0000,0000,,Oh, really? Then maybe I'll \Ntry racing butterfly, too!
+Dialogue: 0,0:06:23.38,0:06:25.32,Main,Makoto,0000,0000,0000,,Isn't butterfly your weakest stroke?
+Dialogue: 0,0:06:27.39,0:06:29.81,Main,Nagisa,0000,0000,0000,,This is really exciting somehow!
+Dialogue: 0,0:06:29.81,0:06:32.72,Main,Nagisa,0000,0000,0000,,Hey, Rei-chan, why don't you \Ntry entering the breaststroke?
+Dialogue: 0,0:06:32.72,0:06:33.78,Main,Rei,0000,0000,0000,,Never mind entering.
+Dialogue: 0,0:06:33.78,0:06:36.31,Main,,0000,0000,0000,,I still can't swim any \Nstroke but the butterfly!
+Dialogue: 0,0:06:36.31,0:06:40.53,Main,Nagisa,0000,0000,0000,,What? Don't say that!
+Dialogue: 0,0:06:40.53,0:06:42.87,Main,Nagisa,0000,0000,0000,,You're not the same Rei-chan you used to be.
+Dialogue: 0,0:06:43.79,0:06:46.44,Main,Nagisa,0000,0000,0000,,I bet at this point, you could \Nswim any stroke you wanted!
+Dialogue: 0,0:06:46.44,0:06:48.17,Main,Rei,0000,0000,0000,,You think so?
+Dialogue: 0,0:06:48.62,0:06:50.12,Main,Gou,0000,0000,0000,,That's true.
+Dialogue: 0,0:06:50.12,0:06:53.23,Main,,0000,0000,0000,,After all, you study up on \Nswimming every day, Rei-kun.
+Dialogue: 0,0:06:53.80,0:06:57.30,Main,Rei,0000,0000,0000,,I guess it would be possible, at least...
+Dialogue: 0,0:06:57.30,0:06:58.81,Main,Rei,0000,0000,0000,,But ever since—
+Dialogue: 0,0:06:58.81,0:07:01.31,Main,Makoto,0000,0000,0000,,But now that you can swim,
+Dialogue: 0,0:07:01.87,0:07:04.32,Main,Makoto,0000,0000,0000,,I bet your backstroke would be beautiful, Rei.
+Dialogue: 0,0:07:04.85,0:07:06.32,Main,Rei,0000,0000,0000,,All right, then!
+Dialogue: 0,0:07:07.52,0:07:09.48,Main,Rei,0000,0000,0000,,I shall present a beautiful \Nbackstroke, breaststroke,
+Dialogue: 0,0:07:09.48,0:07:12.41,Main,,0000,0000,0000,,and freestyle stroke to all of you!
+Dialogue: 0,0:07:12.41,0:07:13.43,Main,Nagisa,0000,0000,0000,,Yay!
+Dialogue: 0,0:07:19.58,0:07:21.00,Main,Rei,0000,0000,0000,,Why?!
+Dialogue: 0,0:07:21.25,0:07:22.85,Main,Gou,0000,0000,0000,,Don't get discouraged, Rei-kun!
+Dialogue: 0,0:07:22.85,0:07:25.29,Main,Nagisa,0000,0000,0000,,Your form is perfect, Rei-chan!
+Dialogue: 0,0:07:23.40,0:07:26.97,Main,Rei,0000,0000,0000,,{\an8}Why does it have to be this way?!
+Dialogue: 0,0:07:25.29,0:07:28.13,Main,Makoto,0000,0000,0000,,Don't rush. Take your time \Ngetting the hang of it.
+Dialogue: 0,0:07:29.49,0:07:30.25,Main,Haruka,0000,0000,0000,,Rei...
+Dialogue: 0,0:07:31.98,0:07:35.64,Main,Haruka,0000,0000,0000,,You don't need to force yourself \Nto swim something different.
+Dialogue: 0,0:07:36.47,0:07:40.40,Main,Haruka,0000,0000,0000,,As long as you have one swimming style \Nof your own, that's enough, isn't it?
+Dialogue: 0,0:07:44.99,0:07:47.98,Nar/Thought/Flashback,Rei,0000,0000,0000,,That's what Haruka-senpai said,
+Dialogue: 0,0:07:47.98,0:07:50.42,Nar/Thought/Flashback,,0000,0000,0000,,but is that really good enough?
+Dialogue: 0,0:07:51.03,0:07:55.20,Basics,Title Text,0000,0000,0000,,Basics 2: Your Lungs Are Major Flotation Devices
+Dialogue: 0,0:07:51.49,0:07:54.87,Nar/Thought/Flashback,Rei,0000,0000,0000,,I still can't even handle the same \Ntraining regimen as the others.
+Dialogue: 0,0:07:55.38,0:07:57.49,Nar/Thought/Flashback,Rei,0000,0000,0000,,If new members join our club,
+Dialogue: 0,0:07:57.49,0:08:00.29,Nar/Thought/Flashback,,0000,0000,0000,,could I really say with pride \Nthat I'm their senior?
+Dialogue: 0,0:08:00.72,0:08:04.38,Nar/Thought/Flashback,Rei,0000,0000,0000,,I want to try competing in other events, too.
+Dialogue: 0,0:08:04.87,0:08:07.87,Nar/Thought/Flashback,Rei,0000,0000,0000,,Will I never be able to swim \Nanything but butterfly?
+Dialogue: 0,0:08:07.87,0:08:08.90,Main,Sera,0000,0000,0000,,Ryugazaki...
+Dialogue: 0,0:08:10.05,0:08:11.41,Main,Sera,0000,0000,0000,,It's been a while.
+Dialogue: 0,0:08:11.83,0:08:13.01,Main,Rei,0000,0000,0000,,Sera-senpai!
+Dialogue: 0,0:08:13.38,0:08:16.47,Main,Sera,0000,0000,0000,,Your running looked \Nfantastic the other day in
+Dialogue: 0,0:08:16.47,0:08:17.76,Main,,0000,0000,0000,,the Club-Versus-Club Relay.
+Dialogue: 0,0:08:18.96,0:08:23.69,Main,Rei,0000,0000,0000,,No matter how fast I can run, \Nit doesn't help the swim club.
+Dialogue: 0,0:08:28.64,0:08:30.02,Main,Sera,0000,0000,0000,,Hey, Ryugazaki...
+Dialogue: 0,0:08:30.89,0:08:32.57,Main,,0000,0000,0000,,Don't you feel any desire to \Ncome back to the track team?
+Dialogue: 0,0:08:33.89,0:08:38.81,Main,Sera,0000,0000,0000,,To me, at least, you seem to shine \Nmore when you're on the track.
+Dialogue: 0,0:08:39.41,0:08:41.83,Main,Sera,0000,0000,0000,,How is it when you're in the water?
+Dialogue: 0,0:08:41.83,0:08:44.05,Main,Rei,0000,0000,0000,,Th-That's...
+Dialogue: 0,0:08:43.46,0:08:44.46,Book,Small Text,0000,0000,0000,,Learn to Swim\N {\fs26}Completely Master the \NFour Strokes of Swimming
+Dialogue: 0,0:08:49.34,0:08:53.34,Main,Sera,0000,0000,0000,,If you're ever interested in coming back \Nto the track team, you're always welcome.
+Dialogue: 0,0:08:53.73,0:08:54.93,Main,Sera,0000,0000,0000,,I'll be waiting for you.
+Dialogue: 0,0:08:54.93,0:08:55.85,Main,Sera,0000,0000,0000,,See you later.
+Dialogue: 0,0:09:07.33,0:09:08.86,Main,Gou,0000,0000,0000,,Haruka-senpai?
+Dialogue: 0,0:09:09.53,0:09:11.03,Main,,0000,0000,0000,,Is something wrong?
+Dialogue: 0,0:09:13.27,0:09:14.75,Main,Haruka,0000,0000,0000,,Can I ask you something?
+Dialogue: 0,0:09:16.54,0:09:19.62,Main,Gou,0000,0000,0000,,Sousuke-kun's already been \Nscouted by a university.
+Dialogue: 0,0:09:20.25,0:09:22.71,Main,Gou,0000,0000,0000,,So he decided to spend his \Nlast year of high school
+Dialogue: 0,0:09:22.71,0:09:24.79,Main,,0000,0000,0000,,back home, swimming his own way.
+Dialogue: 0,0:09:24.79,0:09:26.07,Main,Gou,0000,0000,0000,,That's why he's at Samezuka.
+Dialogue: 0,0:09:27.12,0:09:29.54,Nar/Thought/Flashback,Sousuke,0000,0000,0000,,Don't get in Rin's way ever again.
+Dialogue: 0,0:09:30.00,0:09:32.30,Main,Gou,0000,0000,0000,,Did something happen with Sousuke-kun?
+Dialogue: 0,0:09:33.24,0:09:34.34,Main,Haruka,0000,0000,0000,,No.
+Dialogue: 0,0:09:36.30,0:09:39.68,Main,Gou,0000,0000,0000,,If you'd just set some record \Ntimes in tournaments,
+Dialogue: 0,0:09:39.68,0:09:42.30,Main,,0000,0000,0000,,you'd have lots of scouts \Nafter you, too, Haruka-senpai!
+Dialogue: 0,0:09:42.94,0:09:44.93,Main,Haruka,0000,0000,0000,,I swim because I want to.
+Dialogue: 0,0:09:45.31,0:09:46.31,Main,Haruka,0000,0000,0000,,That's all.
+Dialogue: 0,0:09:49.64,0:09:51.94,Main,Nagisa,0000,0000,0000,,Ah, so nice and warm!
+Dialogue: 0,0:09:51.94,0:09:54.44,Main,Makoto,0000,0000,0000,,The pool is still a little cold, isn't it?
+Dialogue: 0,0:09:55.71,0:09:58.45,Nar/Thought/Flashback,Rei,0000,0000,0000,,Haruka-senpai swims because he wants to.
+Dialogue: 0,0:09:59.34,0:10:00.74,Nar/Thought/Flashback,Rei,0000,0000,0000,,So what about me?
+Dialogue: 0,0:10:01.94,0:10:05.60,Main,Nagisa,0000,0000,0000,,So then Haru-chan's eyes flew wide open!
+Dialogue: 0,0:10:06.12,0:10:10.24,Main,Nagisa,0000,0000,0000,,Hey, Rei-chan, let's all drop by \NHaru-chan's place after this.
+Dialogue: 0,0:10:10.67,0:10:11.96,Main,Rei,0000,0000,0000,,I'm sorry.
+Dialogue: 0,0:10:11.96,0:10:16.22,Main,,0000,0000,0000,,I've got an errand to run today, \Nso I'll just go on ahead.
+Dialogue: 0,0:10:19.23,0:10:20.55,Main,Nagisa,0000,0000,0000,,Rei-chan?
+Dialogue: 0,0:10:21.69,0:10:27.35,Main,Japanese Teacher,0000,0000,0000,,As with any great work, the story ties \Nto the actual events and circumstances
+Dialogue: 0,0:10:27.35,0:10:30.08,Main,,0000,0000,0000,,surrounding the author at that time.
+Dialogue: 0,0:10:31.22,0:10:32.36,Main,Nagisa,0000,0000,0000,,Ryugazaki-kun...
+Dialogue: 0,0:10:32.36,0:10:33.36,Main,Rei,0000,0000,0000,,Yes!
+Dialogue: 0,0:10:33.86,0:10:36.05,Main,Japanese Teacher,0000,0000,0000,,Ryugazaki-kun, do you need \Nto go to the bathroom?
+Dialogue: 0,0:10:36.05,0:10:36.53,Main,Rei,0000,0000,0000,,Huh?
+Dialogue: 0,0:10:36.53,0:10:38.36,Main,Rei,0000,0000,0000,,Oh! N-No, sir.
+Dialogue: 0,0:10:39.34,0:10:42.47,Main,Rei,0000,0000,0000,,I can't believe I did something so humiliating!
+Dialogue: 0,0:10:42.95,0:10:45.73,Main,Rei,0000,0000,0000,,But I could swear I heard \Nsomeone call my name.
+Dialogue: 0,0:10:45.73,0:10:47.33,Main,Nagisa,0000,0000,0000,,Uh, more importantly...
+Dialogue: 0,0:10:47.33,0:10:48.78,Main,Nagisa,0000,0000,0000,,After swim club today...
+Dialogue: 0,0:10:48.78,0:10:52.38,Main,Rei,0000,0000,0000,,Sorry. I have something to do again today.
+Dialogue: 0,0:10:52.64,0:10:54.88,Main,Nagisa,0000,0000,0000,,Aw, again?
+Dialogue: 0,0:10:54.88,0:10:57.30,Main,Nagisa,0000,0000,0000,,A yummy new ice cream shop \Nopened up by the station...
+Dialogue: 0,0:10:57.60,0:10:59.80,Main,Rei,0000,0000,0000,,Sorry, I have plans today.
+Dialogue: 0,0:11:00.17,0:11:02.05,Main,Nagisa,0000,0000,0000,,Can I drop by your \Nplace after school today?
+Dialogue: 0,0:11:02.05,0:11:04.39,Main,Rei,0000,0000,0000,,Sorry. Today's not a good day, either.
+Dialogue: 0,0:11:04.66,0:11:06.14,Main,Nagisa,0000,0000,0000,,Rei-chan! Let's go and—
+Dialogue: 0,0:11:06.44,0:11:09.84,Main,Rei,0000,0000,0000,,Sorry! This is an errand I really can't skip!
+Dialogue: 0,0:11:10.69,0:11:15.90,Main,Teacher,0000,0000,0000,,Thus, among the many different \Nmeanings hidden in this passage...
+Dialogue: 0,0:11:15.90,0:11:17.69,Main,Nagisa,0000,0000,0000,,Something is definitely wrong with Rei-chan!
+Dialogue: 0,0:11:18.19,0:11:19.40,Main,Haruka,0000,0000,0000,,What's the problem?
+Dialogue: 0,0:11:19.40,0:11:21.57,Main,Makoto,0000,0000,0000,,He's still diligent about coming to practice.
+Dialogue: 0,0:11:21.90,0:11:24.57,Main,Nagisa,0000,0000,0000,,Yeah, but yesterday was Sunday,
+Dialogue: 0,0:11:24.57,0:11:26.32,Main,,0000,0000,0000,,so I went to Rei-chan's house again,
+Dialogue: 0,0:11:26.32,0:11:27.29,Main,Nagisa,0000,0000,0000,,but then...
+Dialogue: 0,0:11:28.09,0:11:30.96,Main,Nagisa,0000,0000,0000,,Rei-chan wasn't there. His mom \Nanswered the door instead.
+Dialogue: 0,0:11:31.82,0:11:34.79,Main,Nagisa,0000,0000,0000,,He usually stays at home to study on Sundays...
+Dialogue: 0,0:11:34.79,0:11:37.53,Main,Gou,0000,0000,0000,,I saw Rei-kun on Sunday.
+Dialogue: 0,0:11:37.53,0:11:38.26,Main,Nagisa,0000,0000,0000,,Really?!
+Dialogue: 0,0:11:38.26,0:11:40.27,Main,Gou,0000,0000,0000,,Yeah. Hana-chan and I were shopping
+Dialogue: 0,0:11:40.27,0:11:42.53,Main,,0000,0000,0000,,for ingredients to make sweets, and...
+Dialogue: 0,0:11:46.23,0:11:49.39,Main,Gou,0000,0000,0000,,He looked like he didn't \Nwant anybody to bother him.
+Dialogue: 0,0:11:50.44,0:11:53.06,Main,Sasabe,0000,0000,0000,,Sounds like he's sick.
+Dialogue: 0,0:11:53.06,0:11:53.90,Main,Nagisa,0000,0000,0000,,What?!
+Dialogue: 0,0:11:54.31,0:11:56.34,Main,Sasabe,0000,0000,0000,,Lovesick, that is!
+Dialogue: 0,0:11:56.34,0:11:57.29,Main,All,0000,0000,0000,,Lovesick?
+Dialogue: 0,0:11:57.29,0:11:59.99,Main,Sasabe,0000,0000,0000,,Rei must've gotten himself a girlfriend!
+Dialogue: 0,0:12:00.26,0:12:01.89,Main,Gou,0000,0000,0000,,Rei-kun has a girlfriend?
+Dialogue: 0,0:12:02.77,0:12:05.19,Main,Sasabe,0000,0000,0000,,There are two kinds of men!
+Dialogue: 0,0:12:05.19,0:12:08.41,Main,,0000,0000,0000,,Those strengthened by love, \Nand those weakened by it.
+Dialogue: 0,0:12:08.72,0:12:10.88,Main,Makoto,0000,0000,0000,,Were you imitating Miss Ama-chan?
+Dialogue: 0,0:12:10.88,0:12:14.58,Main,Gou,0000,0000,0000,,But Rei-kun's definitely the type \Nthat'd be weakened by love.
+Dialogue: 0,0:12:14.58,0:12:16.53,Main,Nagisa,0000,0000,0000,,What do we do? This is bad.
+Dialogue: 0,0:12:16.53,0:12:17.53,Main,Haruka,0000,0000,0000,,It is?
+Dialogue: 0,0:12:17.53,0:12:19.12,Main,Makoto,0000,0000,0000,,Hm...
+Dialogue: 0,0:12:19.12,0:12:20.71,Main,,0000,0000,0000,,What if he gets so crazy
+Dialogue: 0,0:12:20.71,0:12:22.63,Main,,0000,0000,0000,,about his girlfriend that he neglects the club?
+Dialogue: 0,0:12:22.63,0:12:24.01,Main,Nagisa,0000,0000,0000,,What?!
+Dialogue: 0,0:12:24.01,0:12:25.05,Main,Gou,0000,0000,0000,,Don't worry.
+Dialogue: 0,0:12:25.57,0:12:27.18,Main,Gou,0000,0000,0000,,Just leave this to me!
+Dialogue: 0,0:12:27.18,0:12:28.02,Titles,Title,0000,0000,0000,,Relationship Recommendations
+Dialogue: 0,0:12:28.02,0:12:28.76,Titles,Title,0000,0000,0000,,Love and Romance
+Dialogue: 0,0:12:28.76,0:12:29.52,Titles,Title,0000,0000,0000,,Muscle Magic Spells
+Dialogue: 0,0:12:29.52,0:12:30.18,Titles,Title,0000,0000,0000,,Love Confession Situations
+Dialogue: 0,0:12:30.18,0:12:31.93,Main,Rei,0000,0000,0000,,What are all these?
+Dialogue: 0,0:12:32.20,0:12:33.18,Main,Gou,0000,0000,0000,,Rei-kun...
+Dialogue: 0,0:12:33.92,0:12:36.50,Main,Gou,0000,0000,0000,,If there's anything on your \Nmind, please talk to me!
+Dialogue: 0,0:12:36.50,0:12:38.96,Main,Gou,0000,0000,0000,,You don't have to stress \Nover it on your own.
+Dialogue: 0,0:12:39.51,0:12:40.68,Main,Rei,0000,0000,0000,,Gou-san...
+Dialogue: 0,0:12:41.35,0:12:43.00,Main,Rei,0000,0000,0000,,What is this about?
+Dialogue: 0,0:12:46.86,0:12:48.24,Main,Rei,0000,0000,0000,,Me, in love?!
+Dialogue: 0,0:12:48.24,0:12:49.95,Main,Rei,0000,0000,0000,,What gives you that idea?!
+Dialogue: 0,0:12:50.90,0:12:51.87,Main,Gou,0000,0000,0000,,So you're not?
+Dialogue: 0,0:12:52.16,0:12:53.57,Main,Rei,0000,0000,0000,,Certainly not!
+Dialogue: 0,0:12:53.57,0:12:57.49,Main,,0000,0000,0000,,As if I would ever be taken in \Nby something as illogical as love!
+Dialogue: 0,0:12:58.86,0:13:01.05,Main,Gou,0000,0000,0000,,Then why were you shopping for cake?
+Dialogue: 0,0:13:01.45,0:13:04.97,Main,Rei,0000,0000,0000,,I-I just feel like eating \Ncake once in a while!
+Dialogue: 0,0:13:05.21,0:13:07.30,Main,Gou,0000,0000,0000,,Then where do you keep \Ndisappearing to every day?
+Dialogue: 0,0:13:07.30,0:13:09.18,Main,Rei,0000,0000,0000,,Just some minor business.
+Dialogue: 0,0:13:09.18,0:13:10.43,Main,Gou,0000,0000,0000,,What business?
+Dialogue: 0,0:13:10.43,0:13:12.54,Main,Rei,0000,0000,0000,,Just some minor business, \Nmeaning insignificant,
+Dialogue: 0,0:13:12.54,0:13:14.60,Main,,0000,0000,0000,,which is to say it isn't beautiful at all,
+Dialogue: 0,0:13:14.60,0:13:16.60,Main,,0000,0000,0000,,to the degree that I hesitate \Nto utter its nature here!
+Dialogue: 0,0:13:17.13,0:13:20.05,Main,Rei,0000,0000,0000,,A-Anyway, I have minor business \Nto attend to today, as well!
+Dialogue: 0,0:13:20.05,0:13:21.30,Main,,0000,0000,0000,,Excuse me!
+Dialogue: 0,0:13:24.59,0:13:25.49,Main,Haruka,0000,0000,0000,,Definitely...
+Dialogue: 0,0:13:25.85,0:13:26.95,Main,Makoto,0000,0000,0000,,...weird.
+Dialogue: 0,0:13:30.58,0:13:32.06,Main,Rin,0000,0000,0000,,Too sweet...
+Dialogue: 0,0:13:32.66,0:13:34.65,Main,Momotarou,0000,0000,0000,,Sorry to bother you, Rin-senpai!
+Dialogue: 0,0:13:34.65,0:13:37.50,Main,Momotarou,0000,0000,0000,,Could you take a look at my personal \Ntraining regimen for tomorrow?
+Dialogue: 0,0:13:38.43,0:13:39.63,Main,Momotarou,0000,0000,0000,,Cleavage...
+Dialogue: 0,0:13:39.90,0:13:40.79,Main,Rin,0000,0000,0000,,Hey!
+Dialogue: 0,0:13:40.79,0:13:42.43,Main,Momotarou,0000,0000,0000,,S-Sorry!
+Dialogue: 0,0:13:42.43,0:13:43.71,Main,Rin,0000,0000,0000,,What the heck?
+Dialogue: 0,0:13:46.99,0:13:50.09,Main,Momotarou,0000,0000,0000,,I-Is that what they call a homemade cookie?!
+Dialogue: 0,0:13:50.45,0:13:51.76,Main,Rin,0000,0000,0000,,Wanna try one?
+Dialogue: 0,0:13:52.16,0:13:53.35,Main,Momotarou,0000,0000,0000,,Can I?!
+Dialogue: 0,0:13:53.83,0:13:55.35,Main,Momotarou,0000,0000,0000,,Yahoo!
+Dialogue: 0,0:13:57.74,0:13:59.63,Main,Momotarou,0000,0000,0000,,Yum!
+Dialogue: 0,0:13:59.63,0:14:00.94,Main,Momotarou,0000,0000,0000,,Just one more...
+Dialogue: 0,0:14:01.64,0:14:03.61,Main,Rin,0000,0000,0000,,I said you could try {\i1}one{\i0}!
+Dialogue: 0,0:14:03.61,0:14:05.53,Main,Momotarou,0000,0000,0000,,Stingy!
+Dialogue: 0,0:14:06.66,0:14:07.53,Main,Sera,0000,0000,0000,,Hm?
+Dialogue: 0,0:14:07.78,0:14:09.26,Main,Sera,0000,0000,0000,,Ryugazaki...
+Dialogue: 0,0:14:09.26,0:14:10.41,Main,Rei,0000,0000,0000,,Senpai...
+Dialogue: 0,0:14:11.13,0:14:13.54,Main,Sera,0000,0000,0000,,About what I mentioned before...
+Dialogue: 0,0:14:16.67,0:14:18.12,Main,Gou,0000,0000,0000,,That guy...
+Dialogue: 0,0:14:18.43,0:14:21.13,Main,Gou,0000,0000,0000,,What fabulous forearm muscles!
+Dialogue: 0,0:14:21.97,0:14:23.88,Main,Gou,0000,0000,0000,,I mean...
+Dialogue: 0,0:14:24.44,0:14:26.27,Nar/Thought/Flashback,Gou,0000,0000,0000,,Could this be...
+Dialogue: 0,0:14:27.42,0:14:28.97,Main,Gou,0000,0000,0000,,I saw it.
+Dialogue: 0,0:14:28.97,0:14:30.51,Main,Makoto,0000,0000,0000,,What happened?
+Dialogue: 0,0:14:30.51,0:14:31.30,Main,Nagisa,0000,0000,0000,,Gou-chan?
+Dialogue: 0,0:14:32.12,0:14:37.20,Main,Gou,0000,0000,0000,,Well... No, it couldn't be!
+Dialogue: 0,0:14:37.20,0:14:40.69,Main,Gou,0000,0000,0000,,I can't believe he's the \None Rei-kun's in love with!
+Dialogue: 0,0:14:41.34,0:14:42.56,Main,Nagisa,0000,0000,0000,,A guy?!
+Dialogue: 0,0:14:42.56,0:14:46.32,Main,Makoto,0000,0000,0000,,No, he was probably just talking \Nwith an upperclassman he knew.
+Dialogue: 0,0:14:46.64,0:14:48.03,Main,Haruka,0000,0000,0000,,I wonder if that guy was...
+Dialogue: 0,0:14:48.72,0:14:51.20,Main,Gou,0000,0000,0000,,That's him! The guy with the forearms!
+Dialogue: 0,0:14:51.49,0:14:54.45,Main,Makoto,0000,0000,0000,,I'm pretty sure that's the \Ncaptain of the track team.
+Dialogue: 0,0:14:54.81,0:14:57.00,Main,Haruka,0000,0000,0000,,Could Rei be planning to...
+Dialogue: 0,0:14:57.00,0:15:00.42,Main,Makoto,0000,0000,0000,,Maybe running in the club relay \Nreminded him of his track days.
+Dialogue: 0,0:15:00.42,0:15:02.17,Main,Gou,0000,0000,0000,,You think he wants to go back?!
+Dialogue: 0,0:15:02.54,0:15:05.20,Main,Nagisa,0000,0000,0000,,You mean he's going to quit the swim club?!
+Dialogue: 0,0:15:05.20,0:15:08.11,Main,Nagisa,0000,0000,0000,,No! No! I couldn't stand it if he did!
+Dialogue: 0,0:15:08.11,0:15:09.13,Main,Makoto,0000,0000,0000,,I know.
+Dialogue: 0,0:15:09.45,0:15:10.33,Main,Nagisa,0000,0000,0000,,Huh?
+Dialogue: 0,0:15:12.19,0:15:14.56,Main,Makoto,0000,0000,0000,,I absolutely won't allow him to do that.
+Dialogue: 0,0:15:15.77,0:15:17.41,Main,Rei,0000,0000,0000,,Sorry I'm late...
+Dialogue: 0,0:15:17.41,0:15:19.76,Main,Rei,0000,0000,0000,,What's the matter?
+Dialogue: 0,0:15:19.76,0:15:21.27,Main,Makoto,0000,0000,0000,,Nothing!
+Dialogue: 0,0:15:21.27,0:15:24.56,Main,Makoto,0000,0000,0000,,But, Rei, do you have minor \Nbusiness to attend to again?
+Dialogue: 0,0:15:26.00,0:15:27.16,Main,Rei,0000,0000,0000,,I do.
+Dialogue: 0,0:15:27.16,0:15:28.40,Main,Makoto,0000,0000,0000,,In that case,
+Dialogue: 0,0:15:28.66,0:15:30.32,Main,Makoto,0000,0000,0000,,practice is canceled so we can
+Dialogue: 0,0:15:30.32,0:15:32.56,Main,,0000,0000,0000,,hold an emergency meeting at Haru's house!
+Dialogue: 0,0:15:32.56,0:15:33.79,Main,Gou/Nagisa,0000,0000,0000,,Yeah!
+Dialogue: 0,0:15:33.79,0:15:36.12,Main,Gou/Nagisa,0000,0000,0000,,Hip, hip, hurray!
+Dialogue: 0,0:15:38.26,0:15:39.37,Main,Rei,0000,0000,0000,,Um...
+Dialogue: 0,0:15:39.37,0:15:41.75,Main,Rei,0000,0000,0000,,So what's the emergency?
+Dialogue: 0,0:15:42.00,0:15:44.37,Main,Makoto,0000,0000,0000,,What? Um, well...
+Dialogue: 0,0:15:44.37,0:15:46.05,Main,Makoto,0000,0000,0000,,What was it again?
+Dialogue: 0,0:15:46.05,0:15:47.15,Main,Haruka,0000,0000,0000,,Don't pass it off on me.
+Dialogue: 0,0:15:47.15,0:15:51.57,Main,Gou,0000,0000,0000,,W-We're, well... going to \Ntaste-test a new mackerel recipe!
+Dialogue: 0,0:15:51.57,0:15:53.76,Main,Nagisa,0000,0000,0000,,That's not an emergency at all.
+Dialogue: 0,0:15:54.22,0:15:56.10,Main,Haruka,0000,0000,0000,,{\an8}You're the one who called this meeting.
+Dialogue: 0,0:15:54.41,0:15:57.01,Main,Nagisa,0000,0000,0000,,Gou-chan, don't you have any other...
+Dialogue: 0,0:15:56.10,0:15:57.06,Main,Makoto,0000,0000,0000,,{\an8}Yeah, but...
+Dialogue: 0,0:15:57.01,0:16:00.27,Main,Rei,0000,0000,0000,,If there's no emergency, \NI do have an errand to run, so...
+Dialogue: 0,0:16:01.72,0:16:03.11,Main,Makoto,0000,0000,0000,,H-Hey, wai—
+Dialogue: 0,0:16:04.12,0:16:05.31,Main,Rei,0000,0000,0000,,Nagisa-kun?
+Dialogue: 0,0:16:05.81,0:16:08.28,Main,Nagisa,0000,0000,0000,,Don't quit the swim club!
+Dialogue: 0,0:16:08.55,0:16:09.28,Main,Rei,0000,0000,0000,,Huh?!
+Dialogue: 0,0:16:09.55,0:16:11.41,Main,Nagisa,0000,0000,0000,,You can't hide it from us.
+Dialogue: 0,0:16:11.81,0:16:15.25,Main,,0000,0000,0000,,You plan to go back to \Nthe track team, don't you?
+Dialogue: 0,0:16:15.70,0:16:18.16,Main,Nagisa,0000,0000,0000,,I don't want that!
+Dialogue: 0,0:16:18.49,0:16:19.71,Main,Rei,0000,0000,0000,,Nagisa-kun...
+Dialogue: 0,0:16:19.71,0:16:21.21,Main,Makoto,0000,0000,0000,,He's right, Rei.
+Dialogue: 0,0:16:21.57,0:16:25.08,Main,Makoto,0000,0000,0000,,We're a team. I won't let \Nyou just leave like this.
+Dialogue: 0,0:16:25.40,0:16:28.59,Main,Gou,0000,0000,0000,,As the team manager, \NI can't agree with it, either.
+Dialogue: 0,0:16:28.98,0:16:31.84,Main,Haruka,0000,0000,0000,,Rei, it was because of what you said
+Dialogue: 0,0:16:31.84,0:16:33.77,Main,,0000,0000,0000,,that both Rin and I were saved.
+Dialogue: 0,0:16:34.62,0:16:36.47,Main,Haruka,0000,0000,0000,,Don't say you're quitting.
+Dialogue: 0,0:16:36.93,0:16:38.21,Main,Haruka,0000,0000,0000,,Weren't you the one
+Dialogue: 0,0:16:38.21,0:16:40.84,Main,,0000,0000,0000,,who said the four of us were going \Nto swim together at nationals?
+Dialogue: 0,0:16:42.04,0:16:43.52,Main,Rei,0000,0000,0000,,Haruka-senpai...
+Dialogue: 0,0:16:44.30,0:16:45.49,Main,Nagisa,0000,0000,0000,,He's right!
+Dialogue: 0,0:16:45.49,0:16:47.27,Main,Nagisa,0000,0000,0000,,We all promised, didn't we?
+Dialogue: 0,0:16:47.27,0:16:49.11,Main,,0000,0000,0000,,That the four of us would \Nswim the relay together.
+Dialogue: 0,0:16:49.58,0:16:55.19,Main,Nagisa,0000,0000,0000,,You said you'd show us your beautiful \Nbutterfly stroke at nationals!
+Dialogue: 0,0:16:59.51,0:17:01.00,Main,Rei,0000,0000,0000,,Wait a second.
+Dialogue: 0,0:17:01.52,0:17:02.96,Main,Rei,0000,0000,0000,,What are you all talking about?
+Dialogue: 0,0:17:03.33,0:17:05.75,Main,Rei,0000,0000,0000,,I'm not quitting the swim club.
+Dialogue: 0,0:17:07.33,0:17:09.75,Main,Nagisa,0000,0000,0000,,But you were talking with the \Ncaptain of the track team.
+Dialogue: 0,0:17:09.75,0:17:11.51,Main,Rei,0000,0000,0000,,You saw us?
+Dialogue: 0,0:17:12.24,0:17:16.33,Main,Rei,0000,0000,0000,,He did ask me to come back, \Nbut that was all that happened.
+Dialogue: 0,0:17:16.96,0:17:17.64,Main,Rei,0000,0000,0000,,And...
+Dialogue: 0,0:17:18.42,0:17:22.39,Main,,0000,0000,0000,,There's no way I would \Never quit the swim club!
+Dialogue: 0,0:17:26.82,0:17:28.44,Main,All,0000,0000,0000,,Thank goodness.
+Dialogue: 0,0:17:28.67,0:17:30.66,Main,Rei,0000,0000,0000,,And now that we've resolved \Nthat misunderstanding,
+Dialogue: 0,0:17:30.66,0:17:33.80,Main,,0000,0000,0000,,I have an errand to run, so I'll be going...
+Dialogue: 0,0:17:35.18,0:17:36.33,Main,Nagisa,0000,0000,0000,,At this point...
+Dialogue: 0,0:17:36.33,0:17:37.91,Main,Gou,0000,0000,0000,,...there's no choice but to...
+Dialogue: 0,0:17:37.91,0:17:38.91,Main,Both,0000,0000,0000,,...follow him!
+Dialogue: 0,0:17:42.83,0:17:43.87,Main,Makoto,0000,0000,0000,,This is...
+Dialogue: 0,0:17:44.41,0:17:46.87,Main,Nagisa,0000,0000,0000,,Samezuka Academy?
+Dialogue: 0,0:17:47.23,0:17:48.88,Main,Rin,0000,0000,0000,,That's right. Good.
+Dialogue: 0,0:17:49.61,0:17:51.63,Main,Rin,0000,0000,0000,,Stay balanced over your hips.
+Dialogue: 0,0:17:52.01,0:17:54.52,Main,Rin,0000,0000,0000,,Time your strokes to your breaths.
+Dialogue: 0,0:17:54.52,0:17:57.60,Main,Rin,0000,0000,0000,,Aside from that, just do it \Nexactly like I showed you.
+Dialogue: 0,0:17:57.60,0:17:58.45,Main,Rin,0000,0000,0000,,Let's go!
+Dialogue: 0,0:17:58.45,0:17:59.40,Main,Rei,0000,0000,0000,,Okay!
+Dialogue: 0,0:18:11.74,0:18:13.34,Main,Rin,0000,0000,0000,,You did it!
+Dialogue: 0,0:18:13.34,0:18:14.90,Main,Rei,0000,0000,0000,,Did I really?
+Dialogue: 0,0:18:14.90,0:18:15.69,Main,Rin,0000,0000,0000,,Yeah.
+Dialogue: 0,0:18:16.20,0:18:18.23,Main,Rin,0000,0000,0000,,All right! Next up, the breaststroke!
+Dialogue: 0,0:18:18.57,0:18:19.28,Main,Rei,0000,0000,0000,,Okay!
+Dialogue: 0,0:18:19.56,0:18:23.37,Main,Rin,0000,0000,0000,,But seriously, I'm impressed your \Nswimming has come this far.
+Dialogue: 0,0:18:24.02,0:18:25.12,Main,Rin,0000,0000,0000,,Honestly,
+Dialogue: 0,0:18:25.48,0:18:27.75,Main,,0000,0000,0000,,I thought you would've \Ngiven up long before now.
+Dialogue: 0,0:18:30.73,0:18:33.38,Main,Rei,0000,0000,0000,,I'd always thought
+Dialogue: 0,0:18:33.81,0:18:39.13,Main,Rei,0000,0000,0000,,just swimming one style, like \NHaruka-senpai, would be enough.
+Dialogue: 0,0:18:39.13,0:18:42.20,Main,Rei,0000,0000,0000,,The way I look floundering in \Nthe water is not beautiful.
+Dialogue: 0,0:18:42.20,0:18:44.39,Main,Rei,0000,0000,0000,,If it meant having to look \Nthat way all the time,
+Dialogue: 0,0:18:44.39,0:18:45.85,Main,,0000,0000,0000,,I thought I'd rather not swim at all.
+Dialogue: 0,0:18:47.51,0:18:48.51,Main,Rei,0000,0000,0000,,But...
+Dialogue: 0,0:18:49.52,0:18:51.27,Main,,0000,0000,0000,,Despite that, I...
+Dialogue: 0,0:18:51.98,0:18:54.61,Main,Rei,0000,0000,0000,,I didn't want to give up!
+Dialogue: 0,0:18:58.64,0:19:01.88,Main,Rei,0000,0000,0000,,I'm sorry for making you join me every day.
+Dialogue: 0,0:19:01.88,0:19:05.20,Main,Rin,0000,0000,0000,,It's after our team's practice, \Nso I don't mind. Plus...
+Dialogue: 0,0:19:05.74,0:19:07.52,Main,Rin,0000,0000,0000,,I really owe you.
+Dialogue: 0,0:19:07.90,0:19:08.81,Main,Rei,0000,0000,0000,,Huh?
+Dialogue: 0,0:19:10.18,0:19:11.33,Main,Rin,0000,0000,0000,,Nothing!
+Dialogue: 0,0:19:12.11,0:19:13.21,Main,Rin,0000,0000,0000,,Okay, let's do this!
+Dialogue: 0,0:19:13.63,0:19:16.59,Main,Rin,0000,0000,0000,,You want to surprise all of them, right?
+Dialogue: 0,0:19:18.08,0:19:19.04,Main,Rei,0000,0000,0000,,Right!
+Dialogue: 0,0:19:19.84,0:19:23.83,Main,Nagisa,0000,0000,0000,,Rei-chan was planning \Nto surprise us with this.
+Dialogue: 0,0:19:23.83,0:19:25.06,Main,Makoto,0000,0000,0000,,Yeah...
+Dialogue: 0,0:19:27.07,0:19:30.82,Main,Nagisa,0000,0000,0000,,Oh! Look! See? Rei-chan's \Nswimming breaststroke!
+Dialogue: 0,0:19:30.82,0:19:31.55,Main,Gou/Makoto,0000,0000,0000,,Whoa!
+Dialogue: 0,0:19:31.55,0:19:32.77,Main,Makoto,0000,0000,0000,,He really is!
+Dialogue: 0,0:19:32.98,0:19:34.30,Main,Nagisa,0000,0000,0000,,He did the turn, too!
+Dialogue: 0,0:19:34.30,0:19:35.33,Main,Makoto,0000,0000,0000,,A real breaststroke turn!
+Dialogue: 0,0:19:35.33,0:19:37.19,Main,Gou,0000,0000,0000,,He's swimming toward us!
+Dialogue: 0,0:19:36.55,0:19:37.19,Main,Nagisa,0000,0000,0000,,Yeah!
+Dialogue: 0,0:19:40.80,0:19:42.73,Main,Sousuke,0000,0000,0000,,You're working hard every day, yourself.
+Dialogue: 0,0:19:42.73,0:19:43.70,Main,Rin,0000,0000,0000,,Shut up.
+Dialogue: 0,0:19:44.62,0:19:47.20,Main,Rin,0000,0000,0000,,Even if we're on different \Nteams, he's a friend.
+Dialogue: 0,0:19:47.74,0:19:50.34,Main,Rin,0000,0000,0000,,And when I saw how serious he \Nwas about learning to swim,
+Dialogue: 0,0:19:50.34,0:19:53.08,Main,,0000,0000,0000,,I seriously wanted to help him get there, too.
+Dialogue: 0,0:19:53.83,0:19:56.84,Main,Sousuke,0000,0000,0000,,For your friend, huh?
+Dialogue: 0,0:19:57.43,0:19:59.56,Main,Rin,0000,0000,0000,,Anyway, today was the last time.
+Dialogue: 0,0:19:59.56,0:20:02.84,Main,Rin,0000,0000,0000,,It looks like he's got the hang \Nof it now, so he'll be fine.
+Dialogue: 0,0:20:03.34,0:20:04.68,Main,Rin,0000,0000,0000,,He really
+Dialogue: 0,0:20:05.32,0:20:07.85,Main,,0000,0000,0000,,has worked hard.
+Dialogue: 0,0:20:11.25,0:20:13.44,Main,Sousuke,0000,0000,0000,,I'm glad for you, Rin.
+Dialogue: 0,0:20:16.08,0:20:18.15,Main,Nitori,0000,0000,0000,,Huh? Is that...
+Dialogue: 0,0:20:18.85,0:20:20.81,Main,Momotarou,0000,0000,0000,,One of Gou-san's homemade cookies!
+Dialogue: 0,0:20:20.81,0:20:23.99,Main,Momotarou,0000,0000,0000,,I begged Rin-senpai and got another one!
+Dialogue: 0,0:20:23.99,0:20:26.08,Main,Nitori,0000,0000,0000,,What? You're wrong about that.
+Dialogue: 0,0:20:26.08,0:20:27.71,Main,Nitori,0000,0000,0000,,That was made by Ryugazaki-san.
+Dialogue: 0,0:20:27.71,0:20:28.24,Main,Momotarou,0000,0000,0000,,Huh?!
+Dialogue: 0,0:20:28.69,0:20:31.39,Main,Nitori,0000,0000,0000,,He wanted to get Rin-senpai a \Ncake to thank him for the lessons,
+Dialogue: 0,0:20:31.39,0:20:33.46,Main,,0000,0000,0000,,but out of consideration \Nfor his physical fitness,
+Dialogue: 0,0:20:33.46,0:20:35.77,Main,Nitori,0000,0000,0000,,he decided to make cookies containing
+Dialogue: 0,0:20:35.77,0:20:38.02,Main,Nitori,0000,0000,0000,,nutrients that Rin-senpai was lacking.
+Dialogue: 0,0:20:40.83,0:20:42.47,Main,Rei,0000,0000,0000,,Thank you for waiting!
+Dialogue: 0,0:20:42.80,0:20:46.22,Main,Rei,0000,0000,0000,,At long last, the time has come for \Nme to reveal my magnificent new form!
+Dialogue: 0,0:20:47.55,0:20:49.43,Main,Rei,0000,0000,0000,,Please try not to be too surprised.
+Dialogue: 0,0:20:49.84,0:20:51.65,Main,Rei,0000,0000,0000,,And away we go!
+Dialogue: 0,0:20:55.72,0:20:57.76,Main,Haruka,0000,0000,0000,,Rei is swimming freestyle.
+Dialogue: 0,0:20:57.76,0:20:59.32,Main,Nagisa,0000,0000,0000,,That's amazing, Rei-chan!
+Dialogue: 0,0:20:59.32,0:21:01.55,Main,,0000,0000,0000,,You've learned how to swim all the strokes!
+Dialogue: 0,0:21:02.06,0:21:03.77,Main,Gou,0000,0000,0000,,This isn't good enough, guys.
+Dialogue: 0,0:21:03.77,0:21:05.69,Main,Gou,0000,0000,0000,,We need to look more surprised!
+Dialogue: 0,0:21:06.03,0:21:07.92,Main,Nagisa,0000,0000,0000,,Whoa! How can this be?!
+Dialogue: 0,0:21:07.92,0:21:09.87,Main,Makoto,0000,0000,0000,,When did he learn how to swim like that?!
+Dialogue: 0,0:21:09.87,0:21:11.50,Main,Haruka,0000,0000,0000,,What's going on here?
+Dialogue: 0,0:21:12.28,0:21:14.29,Main,Gou,0000,0000,0000,,You guys are hopeless.
+Dialogue: 0,0:21:14.29,0:21:15.91,Main,Nagisa,0000,0000,0000,,Maybe we should just tell the truth.
+Dialogue: 0,0:21:15.91,0:21:18.00,Main,Makoto,0000,0000,0000,,No, we definitely can't.
+Dialogue: 0,0:21:18.77,0:21:21.51,Main,Rei,0000,0000,0000,,What did you think, everyone?
+Dialogue: 0,0:21:22.62,0:21:24.29,Main,,0000,0000,0000,,About my swimming?
+Dialogue: 0,0:21:24.61,0:21:28.07,Main,Rei,0000,0000,0000,,Honestly, you can't help \Nbut be amazed, can you?
+Dialogue: 0,0:21:30.52,0:21:31.10,Main,Haruka,0000,0000,0000,,Rei...
+Dialogue: 0,0:21:32.32,0:21:33.85,Main,Haruka,0000,0000,0000,,You've really worked hard, haven't you?
+Dialogue: 0,0:21:37.88,0:21:38.94,Main,Rei,0000,0000,0000,,Yes!
+Dialogue: 0,0:23:11.75,0:23:13.83,Main,Nagisa,0000,0000,0000,,I want to try one of Rei-chan's cookies, too!
+Dialogue: 0,0:23:13.83,0:23:14.74,Main,Rei,0000,0000,0000,,Certainly!
+Dialogue: 0,0:23:14.74,0:23:17.73,Main,Rei,0000,0000,0000,,For you, Nagisa-kun, what do you \Nthink of a special vitamin cookie
+Dialogue: 0,0:23:17.73,0:23:19.49,Main,,0000,0000,0000,,that contains 30 lemons' worth of vitamin C?
+Dialogue: 0,0:23:19.49,0:23:20.96,Main,Nagisa,0000,0000,0000,,Huh? A sour cookie?
+Dialogue: 0,0:23:20.96,0:23:23.19,Main,Haruka,0000,0000,0000,,Nagisa, 30 lemons' worth of \Nvitamin C would be equivalent
+Dialogue: 0,0:23:23.19,0:23:24.88,Main,,0000,0000,0000,,to what you'd get from 50 mackerels!
+Dialogue: 0,0:23:24.88,0:23:25.46,Main,Nagisa,0000,0000,0000,,Yay!
+Dialogue: 0,0:23:25.46,0:23:27.67,Main,Rei,0000,0000,0000,,I would never make such a putrid cookie!
+Dialogue: 0,0:23:27.44,0:23:35.96,NextEp,Episode Title,0000,0000,0000,,{\fad(467,1)}The Somersault Turn of Promise!
+Dialogue: 0,0:23:27.67,0:23:30.32,Main,Haruka,0000,0000,0000,,Next episode: The Somersault Turn of Promise!
+Dialogue: 0,0:23:30.32,0:23:33.55,Main,Rei,0000,0000,0000,,What on earth happened between Rin-san \Nand Yamazaki-san in the past?

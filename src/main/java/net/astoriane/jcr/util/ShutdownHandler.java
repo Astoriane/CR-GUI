@@ -12,11 +12,13 @@ public class ShutdownHandler {
 	public static void init() {
 		t = new Thread() {
 			public void run() {
+				System.out.println("Application shutting down... saving configuration.");
 				try {
 					CRConfiguration.saveConfig(
 							CRConfiguration.getProps(),
 							new FileOutputStream(CRConfiguration
 									.getConfigFile()));
+					System.out.println("Saved.");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
