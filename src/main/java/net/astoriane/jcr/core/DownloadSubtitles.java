@@ -8,7 +8,7 @@ import net.astoriane.jcr.util.PythonLauncher;
 
 public class DownloadSubtitles {
 
-	public static States state = States.IDLE;
+	public static States state = States.STARTUP;
 
 	private static String crUrl;
 
