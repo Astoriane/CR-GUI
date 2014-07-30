@@ -25,9 +25,18 @@
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.4</version>
-        <configuration>
-          <descriptor>dep.xml</descriptor>
-        </configuration>
+        <executions>
+            <execution>
+              <id>assembly</id>
+              <phase>package</phase>
+              <goals><goal>attached</goal></goals>
+              <configuration>
+                <descriptors>
+                  <descriptor>dep.xml</descriptor>
+                </descriptors>
+              </configuration>
+            </execution>
+          </executions>
       </plugin>
 	  <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -50,6 +59,43 @@
           </archive>
         </configuration>
       </plugin>
+	  <plugin>
+          <groupId>com.akathist.maven.plugins.launch4j</groupId>
+          <artifactId>launch4j-maven-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>l4j-clui</id>
+              <phase>package</phase>
+              <goals><goal>launch4j</goal></goals>
+              <configuration>
+                <headerType>console</headerType>
+                <outfile>target/${artifactId}-${version}.exe</outfile>
+                <jar>target/${artifactId}-${version}.jar</jar>
+                <errTitle>${name}</errTitle>
+                <classPath>
+                  <mainClass>net.astoriane.jcr.Main</mainClass>
+                  <addDependencies>false</addDependencies>
+                  <preCp>anything</preCp>
+                </classPath>
+                <jre>
+                  <minVersion>1.5.0</minVersion>
+                </jre>
+				<icon>src/main/resources/images/application.ico</icon>
+                <versionInfo>
+                  <fileVersion>0.0.0.1</fileVersion>
+                  <txtFileVersion>0.02-beta</txtFileVersion>
+                  <fileDescription>Java wrapper for Crunchyroll</fileDescription>
+                  <copyright>2014 - Astoriane</copyright>
+                  <productVersion>0.0.0.2</productVersion>
+                  <txtProductVersion>0.02-beta</txtProductVersion>
+                  <productName>Crunchyroll GUI</productName>
+                  <internalName>crunchyroll-gui</internalName>
+                  <originalFilename>original.exe</originalFilename>
+                </versionInfo>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
     </plugins>
   </build>
   <description>Crunchyroll java wrapper</description>
