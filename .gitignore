@@ -1,5 +1,7 @@
 target/
 bin/
+config/
+downloads/
 .settings/
 .classpath
 .project
