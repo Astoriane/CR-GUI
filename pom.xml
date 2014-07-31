@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.astoriane.jcr</groupId>
-  <artifactId>crunchyroll-gui</artifactId>
+  <artifactId>jCrunchyroll</artifactId>
   <packaging>jar</packaging>
   <version>0.02-beta</version>
-  <name>crunchyroll-gui</name>
+  <name>jCrunchyroll</name>
   <url>https://github.com/Astoriane/CR-GUI</url>
   <dependencies>
     <dependency>
@@ -88,8 +88,8 @@
                   <copyright>2014 - Astoriane</copyright>
                   <productVersion>0.0.0.2</productVersion>
                   <txtProductVersion>0.02-beta</txtProductVersion>
-                  <productName>Crunchyroll GUI</productName>
-                  <internalName>crunchyroll-gui</internalName>
+                  <productName>jCrunchyroll</productName>
+                  <internalName>jCrunchyroll</internalName>
                   <originalFilename>original.exe</originalFilename>
                 </versionInfo>
               </configuration>
