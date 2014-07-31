@@ -19,6 +19,11 @@
         <artifactId>commons-io</artifactId>
         <version>2.4</version>
 	</dependency>
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.2</version>
+	</dependency>
   </dependencies>
   <build>
     <plugins>
@@ -69,9 +74,9 @@
               <goals><goal>launch4j</goal></goals>
               <configuration>
                 <headerType>console</headerType>
-                <outfile>target/${artifactId}-${version}.exe</outfile>
-                <jar>target/${artifactId}-${version}.jar</jar>
-                <errTitle>${name}</errTitle>
+                <outfile>target/${project.artifactId}-${project.version}.exe</outfile>
+                <jar>target/${project.artifactId}-${project.version}.jar</jar>
+                <errTitle>${project.name}</errTitle>
                 <classPath>
                   <mainClass>net.astoriane.jcr.Main</mainClass>
                   <addDependencies>false</addDependencies>
