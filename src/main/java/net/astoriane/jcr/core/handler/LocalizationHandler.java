@@ -27,7 +27,7 @@ public class LocalizationHandler {
 
 	public static void handleLocales() {
 
-		defaultLocale = new File(localeDir + "en_US.lang");
+		defaultLocale = new File(localeDir + "en_US.xml");
 
 		if (!defaultLocale.exists()) {
 
@@ -50,11 +50,12 @@ public class LocalizationHandler {
 				break;
 			}
 		}
-		
-		choosenLocale = new File(localeDir + choosenLang + ".lang");
-		
-		if(!choosenLocale.exists()) {
-			System.out.println("Could not found choosen language. " + choosenLocale.getName() + " Reverting to English");
+
+		choosenLocale = new File(localeDir + choosenLang + ".xml");
+
+		if (!choosenLocale.exists()) {
+			System.out.println("Could not found choosen language. "
+					+ choosenLocale.getName() + " Reverting to English");
 			choosenLocale = defaultLocale;
 		}
 
@@ -63,7 +64,7 @@ public class LocalizationHandler {
 			input = new FileInputStream(choosenLocale);
 
 			// load a properties file
-			p.load(input);
+			p.loadFromXML(input);
 
 			Strings.LOCALE_SYSTEM_STARTUP = p
 					.getProperty(Strings.SYSTEM_STARTUP);
@@ -73,6 +74,9 @@ public class LocalizationHandler {
 					.getProperty(Strings.SYSTEM_CREATE_DIR);
 			Strings.LOCALE_SYSTEM_LOAD_CONFIG = p
 					.getProperty(Strings.SYSTEM_LOAD_CONFIG);
+
+			Strings.LOCALE_MODULE_SUBTITLE_NAME = p
+					.getProperty(Strings.MODULE_SUBTITLE_NAME);
 			Strings.LOCALE_MODULE_SUBTITLE_STARTUP = p
 					.getProperty(Strings.MODULE_SUBTITLE_STARTUP);
 			Strings.LOCALE_MODULE_SUBTITLE_LOADED_CONFIG = p
@@ -85,8 +89,6 @@ public class LocalizationHandler {
 					.getProperty(Strings.MODULE_SUBTITLE_SUCCESS);
 			Strings.LOCALE_MODULE_SUBTITLE_ERROR = p
 					.getProperty(Strings.MODULE_SUBTITLE_ERROR);
-			
-			System.out.println(Strings.LOCALE_MODULE_SUBTITLE_STARTUP);
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -118,6 +120,8 @@ public class LocalizationHandler {
 			p.setProperty(Strings.SYSTEM_LOAD_CONFIG,
 					Strings.SYSTEM_LOAD_CONFIG_DEFAULT);
 
+			p.setProperty(Strings.MODULE_SUBTITLE_NAME,
+					Strings.MODULE_SUBTITLE_NAME_DEFAULT);
 			p.setProperty(Strings.MODULE_SUBTITLE_STARTUP,
 					Strings.MODULE_SUBTITLE_STARTUP_DEFAULT);
 			p.setProperty(Strings.MODULE_SUBTITLE_LOADED_CONFIG,
@@ -132,7 +136,7 @@ public class LocalizationHandler {
 					Strings.MODULE_SUBTITLE_ERROR_DEFAULT);
 
 			// save properties to project root folder
-			p.store(output, null);
+			p.storeToXML(output, "English language file.");
 
 		} catch (IOException io) {
 			io.printStackTrace();

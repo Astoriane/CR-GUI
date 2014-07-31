@@ -9,6 +9,7 @@ public class Strings {
 	public static String LOCALE_SYSTEM_CREATE_DIR;
 	public static String LOCALE_SYSTEM_LOAD_CONFIG;
 
+	public static String LOCALE_MODULE_SUBTITLE_NAME;
 	public static String LOCALE_MODULE_SUBTITLE_STARTUP;
 	public static String LOCALE_MODULE_SUBTITLE_LOADED_CONFIG;
 	public static String LOCALE_MODULE_SUBTITLE_LOADED_SCRIPT;
@@ -23,6 +24,7 @@ public class Strings {
 	public static final String SYSTEM_CREATE_DIR = "system.createDir";
 	public static final String SYSTEM_LOAD_CONFIG = "system.loadConfig";
 
+	public static final String MODULE_SUBTITLE_NAME = "module.subtitle.name";
 	public static final String MODULE_SUBTITLE_STARTUP = "module.subtitle.startup";
 	public static final String MODULE_SUBTITLE_LOADED_CONFIG = "module.subtitle.loaded";
 	public static final String MODULE_SUBTITLE_LOADED_SCRIPT = "module.subtitle.scriptLoad";
@@ -36,6 +38,7 @@ public class Strings {
 	public static final String SYSTEM_CREATE_DIR_DEFAULT = "Directory created: ";
 	public static final String SYSTEM_LOAD_CONFIG_DEFAULT = "Loaded configuration files";
 
+	public static final String MODULE_SUBTITLE_NAME_DEFAULT = "Subtitle Module";
 	public static final String MODULE_SUBTITLE_STARTUP_DEFAULT = "Module: Subtitle Ripper - Launched";
 	public static final String MODULE_SUBTITLE_LOADED_CONFIG_DEFAULT = "Subtitle module configuration - Loaded";
 	public static final String MODULE_SUBTITLE_LOADED_SCRIPT_DEFAULT = "Loaded parsing script from python library.";
