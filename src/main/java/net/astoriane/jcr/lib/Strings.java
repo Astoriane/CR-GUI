@@ -8,6 +8,9 @@ public class Strings {
 	public static String LOCALE_SYSTEM_CREATE_CONFIG;
 	public static String LOCALE_SYSTEM_CREATE_DIR;
 	public static String LOCALE_SYSTEM_LOAD_CONFIG;
+	public static String LOCALE_SYSTEM_DATA_ENTER;
+	
+	public static String LOCALE_MODULE_LOADER_NAME;
 
 	public static String LOCALE_MODULE_SUBTITLE_NAME;
 	public static String LOCALE_MODULE_SUBTITLE_STARTUP;
@@ -23,6 +26,10 @@ public class Strings {
 	public static final String SYSTEM_CREATE_CONFIG = "system.createConfig";
 	public static final String SYSTEM_CREATE_DIR = "system.createDir";
 	public static final String SYSTEM_LOAD_CONFIG = "system.loadConfig";
+	public static final String SYSTEM_DATA_ENTER = "system.enterData";
+	
+	
+	public static final String MODULE_LOADER_NAME = "module.loader.name";
 
 	public static final String MODULE_SUBTITLE_NAME = "module.subtitle.name";
 	public static final String MODULE_SUBTITLE_STARTUP = "module.subtitle.startup";
@@ -37,6 +44,9 @@ public class Strings {
 	public static final String SYSTEM_CREATE_CONFIG_DEFAULT = "Configuration does not exist. Creating...";
 	public static final String SYSTEM_CREATE_DIR_DEFAULT = "Directory created: ";
 	public static final String SYSTEM_LOAD_CONFIG_DEFAULT = "Loaded configuration files";
+	public static final String SYSTEM_DATA_ENTER_DEFAULT = "Enter Crunchyroll URL";
+	
+	public static final String MODULE_LOADER_NAME_DEFAULT = "Loader Module";
 
 	public static final String MODULE_SUBTITLE_NAME_DEFAULT = "Subtitle Module";
 	public static final String MODULE_SUBTITLE_STARTUP_DEFAULT = "Module: Subtitle Ripper - Launched";

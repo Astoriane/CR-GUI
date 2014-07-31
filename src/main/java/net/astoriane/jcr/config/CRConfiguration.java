@@ -8,6 +8,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
+import net.astoriane.jcr.lib.Strings;
+
+import org.apache.commons.logging.LogFactory;
+
 public class CRConfiguration {
 
 	private static File configPath = new File("config/"),
@@ -21,7 +25,7 @@ public class CRConfiguration {
 	public static void init() {
 
 		if (createFiles()) {
-			System.out.println("had to make config files!");
+			
 			try {
 
 				output = new FileOutputStream(configFile);
@@ -32,7 +36,7 @@ public class CRConfiguration {
 				prop.setProperty(Settings.subtitleLanguage_Name,
 						Settings.subtitleLanguage_Default);
 
-				prop.store(output, "Cruchyroll downloader settings.");
+				prop.store(output, "Cruchyroll downloader settings");
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -41,7 +45,7 @@ public class CRConfiguration {
 
 		try {
 			loadConfig(prop, input);
-			System.out.println("Successfully loaded config files.");
+			System.out.println(Strings.LOCALE_SYSTEM_LOAD_CONFIG);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -59,7 +63,8 @@ public class CRConfiguration {
 				e.printStackTrace();
 			}
 			if (configPath.exists() && configFile.exists()) {
-				System.out.println("Created config files");
+				System.out.println(Strings.LOCALE_SYSTEM_CREATE_CONFIG);
+				System.out.println(Strings.LOCALE_SYSTEM_CREATE_DIR + configPath.getPath());
 				return true;
 			} else
 				return false;

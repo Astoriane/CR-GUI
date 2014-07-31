@@ -6,21 +6,18 @@ import java.io.InputStreamReader;
 
 public class CommandInput {
 	
-	private static String crUrl;
+	private static String read;
 
 	public static void init() {
-		// prompt the user to enter their name
-		System.out.print("Enter crunchyroll url: ");
 
-		// open up standard input
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		String url = null;
+		String str = null;
 		
 		
 		try {
-			url = br.readLine();
-			crUrl = url;
+			str = br.readLine();
+			read = str;
 		} catch (IOException ioe) {
 			System.out.println("IO error trying to read url!");
 			System.exit(1);
@@ -28,8 +25,8 @@ public class CommandInput {
 
 	}
 	
-	public static String getCrUrl() {
-		return crUrl;
+	public static String getString() {
+		return read;
 	}
 
 }

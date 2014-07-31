@@ -2,6 +2,7 @@ package net.astoriane.jcr.core;
 
 import net.astoriane.jcr.config.Settings;
 import net.astoriane.jcr.core.handler.States;
+import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 import net.astoriane.jcr.util.CrunchyUrl;
 import net.astoriane.jcr.util.PythonLauncher;
@@ -26,8 +27,10 @@ public class DownloadSubtitles {
 		state = States.IDLE;
 
 		while (state == States.IDLE) {
+			System.out.print(Strings.LOCALE_SYSTEM_DATA_ENTER + ": ");
 			CommandInput.init();
-			crUrl = CommandInput.getCrUrl();
+			crUrl = CommandInput.getString();
+			System.out.println("----------------------------");
 			if (crUrl.contains("http://") && crUrl.contains(".com")) {
 				state = States.WORKING;
 			} else if (crUrl == null || crUrl.isEmpty()) {

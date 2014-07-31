@@ -1,19 +1,14 @@
 package net.astoriane.jcr;
 
-import net.astoriane.jcr.config.CRConfiguration;
-import net.astoriane.jcr.core.handler.LocalizationHandler;
+import net.astoriane.jcr.core.handler.ShutdownHandler;
+import net.astoriane.jcr.core.handler.StartupHandler;
 import net.astoriane.jcr.core.module.Modules;
-import net.astoriane.jcr.util.ShutdownHandler;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		// Initialize configuration files.
-		CRConfiguration.init();
-		
-		// Load and configura localization files.
-		LocalizationHandler.handleLocales();
+		StartupHandler.init();
 		
 		Modules.subtitleModule.launch();
 		

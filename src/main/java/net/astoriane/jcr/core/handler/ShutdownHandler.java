@@ -1,4 +1,4 @@
-package net.astoriane.jcr.util;
+package net.astoriane.jcr.core.handler;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
