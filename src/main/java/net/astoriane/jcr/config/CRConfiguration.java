@@ -26,6 +26,7 @@ public class CRConfiguration {
 
 				output = new FileOutputStream(configFile);
 
+				prop.setProperty(Settings.appLanguage_Name, Settings.appLanguage_Default);
 				prop.setProperty(Settings.videoQuality_Name,
 						Settings.videoQuality_Default);
 				prop.setProperty(Settings.subtitleLanguage_Name,
@@ -72,6 +73,7 @@ public class CRConfiguration {
 
 		p.load(input);
 
+		Settings.appLanguage = p.getProperty(Settings.appLanguage_Name);
 		Settings.subtitleLanguage = p
 				.getProperty(Settings.subtitleLanguage_Name);
 		Settings.videoQuality = p.getProperty(Settings.videoQuality_Name);

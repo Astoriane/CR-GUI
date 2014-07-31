@@ -2,6 +2,7 @@ package net.astoriane.jcr;
 
 import net.astoriane.jcr.config.CRConfiguration;
 import net.astoriane.jcr.core.DownloadSubtitles;
+import net.astoriane.jcr.core.handler.LocalizationHandler;
 import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.util.ShutdownHandler;
 
@@ -11,6 +12,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		CRConfiguration.init();
+		
+		LocalizationHandler.handleLocales();
 
 		if (state == States.STARTUP) {
 			initSubDownloader();
