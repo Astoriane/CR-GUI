@@ -1,6 +1,7 @@
 package net.astoriane.jcr.core.handler;
 
 import java.util.Arrays;
+import java.util.Date;
 
 import net.astoriane.jcr.config.CRConfiguration;
 
@@ -32,6 +33,7 @@ public class StartupHandler {
 		}
 		
 		System.out.println(frame);
+		System.out.println("jCrunchyroll - Version: 0.02-beta - " + new Date().toString());
 		System.out.println();
 	}
 	
