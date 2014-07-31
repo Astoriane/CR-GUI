@@ -1,4 +1,4 @@
-package net.astoriane.jcr.core;
+package net.astoriane.jcr.core.subtitles;
 
 import java.io.File;
 import java.io.IOException;

@@ -8,11 +8,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
+import net.astoriane.jcr.Main;
 import net.astoriane.jcr.lib.Strings;
 
-import org.apache.commons.logging.LogFactory;
-
-public class CRConfiguration {
+public class Configuration {
 
 	private static File configPath = new File("config/"),
 			configFile = new File(configPath.getAbsolutePath() + File.separator
@@ -45,7 +44,8 @@ public class CRConfiguration {
 
 		try {
 			loadConfig(prop, input);
-			System.out.println(Strings.LOCALE_SYSTEM_LOAD_CONFIG);
+			Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_CONFIG);
+			Main.logger.log("");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -63,8 +63,8 @@ public class CRConfiguration {
 				e.printStackTrace();
 			}
 			if (configPath.exists() && configFile.exists()) {
-				System.out.println(Strings.LOCALE_SYSTEM_CREATE_CONFIG);
-				System.out.println(Strings.LOCALE_SYSTEM_CREATE_DIR + configPath.getPath());
+				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_CONFIG);
+				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_DIR + configPath.getPath());
 				return true;
 			} else
 				return false;

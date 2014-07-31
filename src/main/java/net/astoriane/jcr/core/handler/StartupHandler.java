@@ -3,7 +3,7 @@ package net.astoriane.jcr.core.handler;
 import java.util.Arrays;
 import java.util.Date;
 
-import net.astoriane.jcr.config.CRConfiguration;
+import net.astoriane.jcr.config.Configuration;
 
 public class StartupHandler {
 	
@@ -15,7 +15,7 @@ public class StartupHandler {
 		LocalizationHandler.handleLocales();
 		
 		// Initialize configuration files.
-		CRConfiguration.init();
+		Configuration.init();
 		
 	}
 	

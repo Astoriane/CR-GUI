@@ -1,7 +1,7 @@
 package net.astoriane.jcr.core.module;
 
-import net.astoriane.jcr.core.DownloadSubtitles;
 import net.astoriane.jcr.core.handler.States;
+import net.astoriane.jcr.core.subtitles.DownloadSubtitles;
 
 public class SubtitleModule implements Module {
 
@@ -9,10 +9,12 @@ public class SubtitleModule implements Module {
 
 	private int id;
 	private String name;
+	private String unlocalizedName;
 	
 	public SubtitleModule(int id, String name) {
 		this.id = id;
 		this.name = name;
+		setUnlocalizedName("subtitleModule");
 	}
 
 	@Override
@@ -58,4 +60,11 @@ public class SubtitleModule implements Module {
 		return name;
 	}
 
+	private void setUnlocalizedName(String s) {
+		this.unlocalizedName = s;
+	}
+	
+	public String getUnlocalizedName() {
+		return unlocalizedName;
+	}
 }

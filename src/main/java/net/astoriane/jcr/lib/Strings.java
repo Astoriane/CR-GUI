@@ -9,8 +9,12 @@ public class Strings {
 	public static String LOCALE_SYSTEM_CREATE_DIR;
 	public static String LOCALE_SYSTEM_LOAD_CONFIG;
 	public static String LOCALE_SYSTEM_DATA_ENTER;
+	public static String LOCALE_SYSTEM_LOAD_MODULE;
 	
 	public static String LOCALE_MODULE_LOADER_NAME;
+	public static String LOCALE_MODULE_LOADER_STARTUP;
+	public static String LOCALE_MODULE_LOADER_DATE_ENTER;
+	public static String LOCALE_MODULE_LOADER_COMMANDS;
 
 	public static String LOCALE_MODULE_SUBTITLE_NAME;
 	public static String LOCALE_MODULE_SUBTITLE_STARTUP;
@@ -27,9 +31,12 @@ public class Strings {
 	public static final String SYSTEM_CREATE_DIR = "system.createDir";
 	public static final String SYSTEM_LOAD_CONFIG = "system.loadConfig";
 	public static final String SYSTEM_DATA_ENTER = "system.enterData";
-	
+	public static final String SYSTEM_LOAD_MODULE = "system.loadModule";
 	
 	public static final String MODULE_LOADER_NAME = "module.loader.name";
+	public static final String MODULE_LOADER_STARTUP = "module.loader.startup";
+	public static final String MODULE_LOADER_COMMANDS = "module.loader.commands";
+	public static final String MODULE_LOADER_DATA_ENTER = "module.loader.enterData";
 
 	public static final String MODULE_SUBTITLE_NAME = "module.subtitle.name";
 	public static final String MODULE_SUBTITLE_STARTUP = "module.subtitle.startup";
@@ -45,8 +52,12 @@ public class Strings {
 	public static final String SYSTEM_CREATE_DIR_DEFAULT = "Directory created: ";
 	public static final String SYSTEM_LOAD_CONFIG_DEFAULT = "Loaded configuration files";
 	public static final String SYSTEM_DATA_ENTER_DEFAULT = "Enter Crunchyroll URL";
+	public static final String SYSTEM_LOAD_MODULE_DEFAULT = "Module loaded: ";
 	
 	public static final String MODULE_LOADER_NAME_DEFAULT = "Loader Module";
+	public static final String MODULE_LOADER_STARTUP_DEFAULT = "jCrunchyroll Loader Module v1.2";
+	public static final String MODULE_LOADER_COMMANDS_DEFAULT = "Available commands: ";
+	public static final String MODULE_LOADER_DATA_ENTER_DEFAULT = "Enter command: ";
 
 	public static final String MODULE_SUBTITLE_NAME_DEFAULT = "Subtitle Module";
 	public static final String MODULE_SUBTITLE_STARTUP_DEFAULT = "Module: Subtitle Ripper - Launched";

@@ -9,6 +9,7 @@ public interface Module {
 	
 	public int getId();
 	
+	public String getUnlocalizedName();
 	public String getName();
 	
 }

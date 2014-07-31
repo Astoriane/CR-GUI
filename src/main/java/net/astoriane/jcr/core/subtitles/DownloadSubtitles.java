@@ -1,4 +1,4 @@
-package net.astoriane.jcr.core;
+package net.astoriane.jcr.core.subtitles;
 
 import net.astoriane.jcr.config.Settings;
 import net.astoriane.jcr.core.handler.States;
