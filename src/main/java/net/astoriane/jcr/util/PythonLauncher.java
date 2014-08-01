@@ -11,11 +11,9 @@ public class PythonLauncher {
 	private static void getConsoleOutput(Process p) {
 		String s = null;
 
-		BufferedReader stdInput = new BufferedReader(new InputStreamReader(
-				p.getInputStream()));
+		BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-		BufferedReader stdError = new BufferedReader(new InputStreamReader(
-				p.getErrorStream()));
+		BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
 
 		try {
 			while ((s = stdInput.readLine()) != null) {
@@ -34,8 +32,7 @@ public class PythonLauncher {
 
 	public static void launchPythonScript(String pathToScript, String args) {
 		try {
-			Process p = Runtime.getRuntime().exec(
-					"python " + pathToScript + " " + args);
+			Process p = Runtime.getRuntime().exec("python " + pathToScript + " " + args);
 			getConsoleOutput(p);
 			p.waitFor();
 			Thread.sleep(1000);

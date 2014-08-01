@@ -42,8 +42,7 @@ public class DownloadSubtitles {
 		}
 
 		while (state == States.WORKING) {
-			System.out.println(Strings.LOCALE_MODULE_SUBTITLE_LAUNCH_SCRIPT + " "
-					+ CrunchyUrl.getSeriesFromUrl(crUrl));
+			System.out.println(Strings.LOCALE_MODULE_SUBTITLE_LAUNCH_SCRIPT + " " + CrunchyUrl.getSeriesFromUrl(crUrl));
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {

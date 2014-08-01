@@ -63,42 +63,35 @@ public class LocalizationHandler {
 			// load a properties file
 			p.loadFromXML(input);
 
-			Strings.LOCALE_SYSTEM_STARTUP = p
-					.getProperty(Strings.SYSTEM_STARTUP);
-			Strings.LOCALE_SYSTEM_CREATE_CONFIG = p
-					.getProperty(Strings.SYSTEM_CREATE_CONFIG);
-			Strings.LOCALE_SYSTEM_CREATE_DIR = p
-					.getProperty(Strings.SYSTEM_CREATE_DIR);
-			Strings.LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS = p
-					.getProperty(Strings.SYSTEM_LOAD_CONFIG);
-			Strings.LOCALE_SYSTEM_DATA_ENTER = p
-					.getProperty(Strings.SYSTEM_DATA_ENTER);
-			Strings.LOCALE_SYSTEM_LOAD_MODULE = p
-					.getProperty(Strings.SYSTEM_LOAD_MODULE);
+			Strings.LOCALE_SYSTEM_STARTUP = p.getProperty(Strings.SYSTEM_STARTUP);
+			Strings.LOCALE_SYSTEM_CREATE_CONFIG = p.getProperty(Strings.SYSTEM_CREATE_CONFIG);
+			Strings.LOCALE_SYSTEM_CREATE_DIR = p.getProperty(Strings.SYSTEM_CREATE_DIR);
+			Strings.LOCALE_SYSTEM_LOAD_CONFIG = p.getProperty(Strings.SYSTEM_LOAD_CONFIG);
+			Strings.LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS = p.getProperty(Strings.SYSTEM_LOAD_CONFIG_SUCCESS);
+			Strings.LOCALE_SYSTEM_LOAD_CONFIG_ERROR = p.getProperty(Strings.SYSTEM_LOAD_CONFIG_ERROR);
+			Strings.LOCALE_SYSTEM_SAVE_CONFIG = p.getProperty(Strings.SYSTEM_SAVE_CONFIG);
+			Strings.LOCALE_SYSTEM_SAVE_CONFIG_SUCCESS = p.getProperty(Strings.SYSTEM_SAVE_CONFIG_SUCCESS);
+			Strings.LOCALE_SYSTEM_SAVE_CONFIG_ERROR = p.getProperty(Strings.SYSTEM_SAVE_CONFIG_ERROR);
+			Strings.LOCALE_SYSTEM_DATA_ENTER = p.getProperty(Strings.SYSTEM_DATA_ENTER);
+			Strings.LOCALE_SYSTEM_LOAD_MODULE = p.getProperty(Strings.SYSTEM_LOAD_MODULE);
+			Strings.LOCALE_SYSTEM_SHUTDOWN = p.getProperty(Strings.SYSTEM_SHUTDOWN);
 
-			Strings.LOCALE_MODULE_KERNEL_NAME = p
-					.getProperty(Strings.MODULE_KERNEL_NAME);
-			Strings.LOCALE_MODULE_KERNEL_STARTUP = p
-					.getProperty(Strings.MODULE_KERNEL_STARTUP);
-			Strings.LOCALE_MODULE_KERNEL_COMMANDS = p
-					.getProperty(Strings.MODULE_KERNEL_COMMANDS);
-			Strings.LOCALE_MODULE_KERNEL_DATE_ENTER = p
-					.getProperty(Strings.MODULE_KERNEL_DATA_ENTER);
+			Strings.LOCALE_MODULE_KERNEL_NAME = p.getProperty(Strings.MODULE_KERNEL_NAME);
+			Strings.LOCALE_MODULE_KERNEL_STARTUP = p.getProperty(Strings.MODULE_KERNEL_STARTUP);
+			Strings.LOCALE_MODULE_KERNEL_COMMANDS = p.getProperty(Strings.MODULE_KERNEL_COMMANDS);
+			Strings.LOCALE_MODULE_KERNEL_DATA_ENTER = p.getProperty(Strings.MODULE_KERNEL_DATA_ENTER);
+			Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID = p.getProperty(Strings.MODULE_KERNEL_ERROR_INVALID);
+			Strings.LOCALE_MODULE_KERNEL_ERROR_EMPTY = p.getProperty(Strings.MODULE_KERNEL_ERROR_EMPTY);
 
-			Strings.LOCALE_MODULE_SUBTITLE_NAME = p
-					.getProperty(Strings.MODULE_SUBTITLE_NAME);
-			Strings.LOCALE_MODULE_SUBTITLE_STARTUP = p
-					.getProperty(Strings.MODULE_SUBTITLE_STARTUP);
-			Strings.LOCALE_MODULE_SUBTITLE_LOADED_CONFIG = p
-					.getProperty(Strings.MODULE_SUBTITLE_LOADED_CONFIG);
-			Strings.LOCALE_MODULE_SUBTITLE_LOADED_SCRIPT = p
-					.getProperty(Strings.MODULE_SUBTITLE_LOADED_SCRIPT);
-			Strings.LOCALE_MODULE_SUBTITLE_DOWNLOAD = p
-					.getProperty(Strings.MODULE_SUBTITLE_DOWNLOAD);
-			Strings.LOCALE_MODULE_SUBTITLE_SUCCESS = p
-					.getProperty(Strings.MODULE_SUBTITLE_SUCCESS);
-			Strings.LOCALE_MODULE_SUBTITLE_ERROR = p
-					.getProperty(Strings.MODULE_SUBTITLE_ERROR);
+			Strings.LOCALE_MODULE_SUBTITLE_NAME = p.getProperty(Strings.MODULE_SUBTITLE_NAME);
+			Strings.LOCALE_MODULE_SUBTITLE_STARTUP = p.getProperty(Strings.MODULE_SUBTITLE_STARTUP);
+			Strings.LOCALE_MODULE_SUBTITLE_LAUNCH_SCRIPT = p.getProperty(Strings.MODULE_SUBTITLE_LAUNCH_SCRIPT);
+			Strings.LOCALE_MODULE_SUBTITLE_LOADED_CONFIG = p.getProperty(Strings.MODULE_SUBTITLE_LOADED_CONFIG);
+			Strings.LOCALE_MODULE_SUBTITLE_LOADED_SCRIPT = p.getProperty(Strings.MODULE_SUBTITLE_LOADED_SCRIPT);
+			Strings.LOCALE_MODULE_SUBTITLE_DOWNLOAD = p.getProperty(Strings.MODULE_SUBTITLE_DOWNLOAD);
+			Strings.LOCALE_MODULE_SUBTITLE_SUCCESS = p.getProperty(Strings.MODULE_SUBTITLE_SUCCESS);
+			Strings.LOCALE_MODULE_SUBTITLE_ERROR = p.getProperty(Strings.MODULE_SUBTITLE_ERROR);
+			Strings.LOCALE_MODULE_SUBTITLE_ERROR_URL = p.getProperty(Strings.MODULE_SUBTITLE_ERROR_URL);
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -120,46 +113,12 @@ public class LocalizationHandler {
 
 			output = new FileOutputStream(defaultLocale);
 
-			// set the properties value
-			p.setProperty(Strings.SYSTEM_STARTUP,
-					Strings.SYSTEM_STARTUP_DEFAULT);
-			p.setProperty(Strings.SYSTEM_CREATE_CONFIG,
-					Strings.SYSTEM_CREATE_CONFIG_DEFAULT);
-			p.setProperty(Strings.SYSTEM_CREATE_DIR,
-					Strings.SYSTEM_CREATE_DIR_DEFAULT);
-			p.setProperty(Strings.SYSTEM_LOAD_CONFIG,
-					Strings.SYSTEM_LOAD_CONFIG_DEFAULT);
-			p.setProperty(Strings.SYSTEM_DATA_ENTER,
-					Strings.SYSTEM_DATA_ENTER_DEFAULT);
-			p.setProperty(Strings.SYSTEM_LOAD_MODULE,
-					Strings.SYSTEM_LOAD_MODULE_DEFAULT);
-
-			p.setProperty(Strings.MODULE_KERNEL_NAME,
-					Strings.MODULE_KERNEL_NAME_DEFAULT);
-			p.setProperty(Strings.MODULE_KERNEL_STARTUP,
-					Strings.MODULE_KERNEL_STARTUP_DEFAULT);
-			p.setProperty(Strings.MODULE_KERNEL_COMMANDS,
-					Strings.MODULE_KERNEL_COMMANDS_DEFAULT);
-			p.setProperty(Strings.MODULE_KERNEL_DATA_ENTER,
-					Strings.MODULE_KERNEL_DATA_ENTER_DEFAULT);
-
-			p.setProperty(Strings.MODULE_SUBTITLE_NAME,
-					Strings.MODULE_SUBTITLE_NAME_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_STARTUP,
-					Strings.MODULE_SUBTITLE_STARTUP_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_LOADED_CONFIG,
-					Strings.MODULE_SUBTITLE_LOADED_CONFIG_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_LOADED_SCRIPT,
-					Strings.MODULE_SUBTITLE_LOADED_SCRIPT_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_DOWNLOAD,
-					Strings.MODULE_SUBTITLE_DOWNLOAD_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_SUCCESS,
-					Strings.MODULE_SUBTITLE_SUCCESS_DEFAULT);
-			p.setProperty(Strings.MODULE_SUBTITLE_ERROR,
-					Strings.MODULE_SUBTITLE_ERROR_DEFAULT);
+			for (int i = 0; i < Locales.entries.size(); i++) {
+				p.setProperty(Locales.entries.get(i), Locales.defaultValues.get(i));
+			}
 
 			// save properties to project root folder
-			p.storeToXML(output, "English language file.");
+			p.storeToXML(output, "English language file for jCrunchyroll library");
 
 		} catch (IOException io) {
 			io.printStackTrace();

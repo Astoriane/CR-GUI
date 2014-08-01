@@ -25,8 +25,7 @@ public class SubtitleModule implements Module {
 		state = States.STARTUP;
 
 		Main.logger.line();
-		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE
-				+ Strings.LOCALE_MODULE_SUBTITLE_NAME);
+		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_SUBTITLE_NAME);
 		Main.logger.log(Strings.LOCALE_MODULE_SUBTITLE_STARTUP);
 		Main.logger.line();
 

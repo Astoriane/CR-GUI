@@ -12,9 +12,8 @@ import java.util.regex.Pattern;
 
 public class CrunchyUrl {
 
-	private static final Pattern TITLE_TAG = Pattern.compile(
-			"\\<title>(.*)\\</title>", Pattern.CASE_INSENSITIVE
-					| Pattern.DOTALL);
+	private static final Pattern TITLE_TAG = Pattern.compile("\\<title>(.*)\\</title>", Pattern.CASE_INSENSITIVE
+			| Pattern.DOTALL);
 
 	/**
 	 * @param url
@@ -38,15 +37,13 @@ public class CrunchyUrl {
 
 			// read the response body, using BufferedReader for performance
 			InputStream in = conn.getInputStream();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					in, charset));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in, charset));
 			int n = 0, totalRead = 0;
 			char[] buf = new char[1024];
 			StringBuilder content = new StringBuilder();
 
 			// read until EOF or first 8192 characters
-			while (totalRead < 8192
-					&& (n = reader.read(buf, 0, buf.length)) != -1) {
+			while (totalRead < 8192 && (n = reader.read(buf, 0, buf.length)) != -1) {
 				content.append(buf, 0, n);
 				totalRead += n;
 			}
@@ -89,8 +86,7 @@ public class CrunchyUrl {
 	}
 
 	private static Charset getCharset(ContentType contentType) {
-		if (contentType != null && contentType.charsetName != null
-				&& Charset.isSupported(contentType.charsetName))
+		if (contentType != null && contentType.charsetName != null && Charset.isSupported(contentType.charsetName))
 			return Charset.forName(contentType.charsetName);
 		else
 			return null;
@@ -100,17 +96,15 @@ public class CrunchyUrl {
 	 * Class holds the content type and charset (if present)
 	 */
 	private static final class ContentType {
-		private static final Pattern CHARSET_HEADER = Pattern.compile(
-				"charset=([-_a-zA-Z0-9]+)", Pattern.CASE_INSENSITIVE
-						| Pattern.DOTALL);
+		private static final Pattern CHARSET_HEADER = Pattern.compile("charset=([-_a-zA-Z0-9]+)",
+				Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
 
 		private String contentType;
 		private String charsetName;
 
 		private ContentType(String headerValue) {
 			if (headerValue == null)
-				throw new IllegalArgumentException(
-						"ContentType must be constructed with a not-null headerValue");
+				throw new IllegalArgumentException("ContentType must be constructed with a not-null headerValue");
 			int n = headerValue.indexOf(";");
 			if (n != -1) {
 				contentType = headerValue.substring(0, n);

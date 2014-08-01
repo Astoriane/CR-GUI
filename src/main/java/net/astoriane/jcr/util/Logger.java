@@ -1,7 +1,7 @@
 package net.astoriane.jcr.util;
 
 public class Logger {
-	
+
 	public void error(String s) {
 		SysMessage.sendMessage(s);
 	}

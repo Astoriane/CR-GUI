@@ -4,12 +4,15 @@ import java.util.Arrays;
 import java.util.Date;
 
 import net.astoriane.jcr.config.Configuration;
+import net.astoriane.jcr.lib.Locales;
 
 public class StartupHandler {
 
 	public static void init() {
 
 		startupMessage();
+
+		Locales.list();
 
 		// Load and configura localization files.
 		LocalizationHandler.handleLocales();
@@ -33,13 +36,11 @@ public class StartupHandler {
 		}
 
 		System.out.println(frame);
-		System.out.println("jCrunchyroll - Version: 0.03-beta - "
-				+ new Date().toString());
+		System.out.println("jCrunchyroll - Version: 0.03-beta - " + new Date().toString());
 		System.out.println();
 	}
 
-	private static String[] asciiMsg = {
-			"   _ _____                       _                     _ _ ",
+	private static String[] asciiMsg = { "   _ _____                       _                     _ _ ",
 			"  (_)  __ \\                     | |                   | | |",
 			"   _| /  \\/_ __ _   _ _ __   ___| |__  _   _ _ __ ___ | | |",
 			"  | | |   | '__| | | | '_ \\ / __| '_ \\| | | | '__/ _ \\| | |",

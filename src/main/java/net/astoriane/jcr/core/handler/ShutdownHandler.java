@@ -16,16 +16,14 @@ public class ShutdownHandler {
 			@Override
 			public void run() {
 				Main.logger.line();
-				Main.logger.log(Strings.LOCALE_SYSTEM_SHUTDOWN);
 				try {
-					Configuration
-							.saveConfig(
-									Configuration.getProps(),
-									new FileOutputStream(Configuration
-											.getConfigFile()));
+					Configuration.saveConfig(Configuration.getProps(),
+							new FileOutputStream(Configuration.getConfigFile()));
 					System.out.println(Strings.LOCALE_SYSTEM_SAVE_CONFIG_SUCCESS);
 				} catch (IOException e) {
 					Main.logger.error(Strings.LOCALE_SYSTEM_SAVE_CONFIG_ERROR);
+				} finally {
+					Main.logger.log(Strings.LOCALE_SYSTEM_SHUTDOWN);
 				}
 			}
 		};

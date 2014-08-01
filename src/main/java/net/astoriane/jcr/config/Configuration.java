@@ -13,9 +13,8 @@ import net.astoriane.jcr.lib.Strings;
 
 public class Configuration {
 
-	private static File configPath = new File("config/"),
-			configFile = new File(configPath.getAbsolutePath() + File.separator
-					+ "cr_configuration.cfg");
+	private static File configPath = new File("config/"), configFile = new File(configPath.getAbsolutePath()
+			+ File.separator + "cr_configuration.cfg");
 
 	private static Properties prop = new Properties();
 	private static OutputStream output = null;
@@ -29,12 +28,9 @@ public class Configuration {
 
 				output = new FileOutputStream(configFile);
 
-				prop.setProperty(Settings.appLanguage_Name,
-						Settings.appLanguage_Default);
-				prop.setProperty(Settings.videoQuality_Name,
-						Settings.videoQuality_Default);
-				prop.setProperty(Settings.subtitleLanguage_Name,
-						Settings.subtitleLanguage_Default);
+				prop.setProperty(Settings.appLanguage_Name, Settings.appLanguage_Default);
+				prop.setProperty(Settings.videoQuality_Name, Settings.videoQuality_Default);
+				prop.setProperty(Settings.subtitleLanguage_Name, Settings.subtitleLanguage_Default);
 
 				prop.store(output, "Cruchyroll downloader settings");
 
@@ -65,24 +61,21 @@ public class Configuration {
 			}
 			if (configPath.exists() && configFile.exists()) {
 				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_CONFIG);
-				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_DIR
-						+ configPath.getPath());
+				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_DIR + configPath.getPath());
 				return true;
 			} else
 				return false;
 		}
 	}
 
-	private static void loadConfig(Properties p, InputStream input)
-			throws IOException {
+	private static void loadConfig(Properties p, InputStream input) throws IOException {
 
 		input = new FileInputStream(configFile);
 
 		p.load(input);
 
 		Settings.appLanguage = p.getProperty(Settings.appLanguage_Name);
-		Settings.subtitleLanguage = p
-				.getProperty(Settings.subtitleLanguage_Name);
+		Settings.subtitleLanguage = p.getProperty(Settings.subtitleLanguage_Name);
 		Settings.videoQuality = p.getProperty(Settings.videoQuality_Name);
 
 		if (input != null)
@@ -94,8 +87,7 @@ public class Configuration {
 
 	}
 
-	public static void saveConfig(Properties p, OutputStream out)
-			throws IOException {
+	public static void saveConfig(Properties p, OutputStream out) throws IOException {
 
 		p.setProperty(Settings.videoQuality_Name, Settings.videoQuality);
 		p.setProperty(Settings.subtitleLanguage_Name, Settings.subtitleLanguage);
