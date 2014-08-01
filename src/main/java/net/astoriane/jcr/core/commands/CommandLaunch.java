@@ -34,8 +34,8 @@ public class CommandLaunch implements Command {
 			}
 			
 		} else {
-			returnValue = false;
-			Main.logger.error("Usage: " + "launch <moduleName>");
+			returnValue = true;
+			Main.logger.error("Usage: " + "launch <moduleName>" + " try 'help' for more info.");
 		}
 		
 	}
