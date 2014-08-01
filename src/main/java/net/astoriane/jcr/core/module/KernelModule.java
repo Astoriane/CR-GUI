@@ -26,6 +26,7 @@ public class KernelModule implements Module {
 
 		state = States.STARTUP;
 
+		Main.logger.line();
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_KERNEL_NAME);
 		Main.logger.log(Strings.LOCALE_MODULE_KERNEL_STARTUP);
 		Main.logger.line();

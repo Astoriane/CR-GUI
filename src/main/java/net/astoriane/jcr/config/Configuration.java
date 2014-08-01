@@ -42,7 +42,6 @@ public class Configuration {
 		try {
 			loadConfig(prop, input);
 			Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS);
-			Main.logger.log("");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
