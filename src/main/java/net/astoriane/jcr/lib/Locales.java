@@ -4,7 +4,7 @@ public class Locales {
 	
 	public static final String[] langs = {
 		"English",
-		"Français",
+		"French",
 		"Turkish"
 	};
 	
