@@ -18,7 +18,6 @@ public class CommandInput {
 			str = br.readLine();
 			read = str;
 		} catch (IOException ioe) {
-			System.out.println("IO error trying to read url!");
 			System.exit(1);
 		}
 

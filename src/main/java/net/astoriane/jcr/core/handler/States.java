@@ -2,7 +2,7 @@ package net.astoriane.jcr.core.handler;
 
 public enum States {
 
-	STARTUP(0), PLACEBO(1), IDLE(2), WORKING(3), EXIT(4);
+	STARTUP(0), IDLE(1), WORKING(2), DONE(3), EXIT(4);
 
 	private int id;
 

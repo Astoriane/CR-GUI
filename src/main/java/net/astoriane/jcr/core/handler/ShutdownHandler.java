@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import net.astoriane.jcr.Main;
 import net.astoriane.jcr.config.Configuration;
+import net.astoriane.jcr.lib.Strings;
 
 public class ShutdownHandler {
 
@@ -15,17 +16,16 @@ public class ShutdownHandler {
 			@Override
 			public void run() {
 				Main.logger.line();
-				System.out
-						.println("Application shutting down... saving configuration.");
+				Main.logger.log(Strings.LOCALE_SYSTEM_SHUTDOWN);
 				try {
 					Configuration
 							.saveConfig(
 									Configuration.getProps(),
 									new FileOutputStream(Configuration
 											.getConfigFile()));
-					System.out.println("Saved.");
+					System.out.println(Strings.LOCALE_SYSTEM_SAVE_CONFIG_SUCCESS);
 				} catch (IOException e) {
-					e.printStackTrace();
+					Main.logger.error(Strings.LOCALE_SYSTEM_SAVE_CONFIG_ERROR);
 				}
 			}
 		};

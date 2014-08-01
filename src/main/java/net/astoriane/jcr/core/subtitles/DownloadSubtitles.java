@@ -36,14 +36,13 @@ public class DownloadSubtitles {
 				state = States.EXIT;
 				return;
 			} else {
-				SysMessage.sendMessage("Invalid url entered. " + crUrl
-						+ " Please try again");
+				SysMessage.sendMessage(Strings.LOCALE_MODULE_SUBTITLE_ERROR_URL);
 				return;
 			}
 		}
 
 		while (state == States.WORKING) {
-			System.out.println("Script launching for: "
+			System.out.println(Strings.LOCALE_MODULE_SUBTITLE_LAUNCH_SCRIPT + " "
 					+ CrunchyUrl.getSeriesFromUrl(crUrl));
 			try {
 				Thread.sleep(2000);

@@ -69,7 +69,7 @@ public class LocalizationHandler {
 					.getProperty(Strings.SYSTEM_CREATE_CONFIG);
 			Strings.LOCALE_SYSTEM_CREATE_DIR = p
 					.getProperty(Strings.SYSTEM_CREATE_DIR);
-			Strings.LOCALE_SYSTEM_LOAD_CONFIG = p
+			Strings.LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS = p
 					.getProperty(Strings.SYSTEM_LOAD_CONFIG);
 			Strings.LOCALE_SYSTEM_DATA_ENTER = p
 					.getProperty(Strings.SYSTEM_DATA_ENTER);

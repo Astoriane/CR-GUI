@@ -1,8 +1,9 @@
 package net.astoriane.jcr.core.module;
 
 import net.astoriane.jcr.Main;
+import net.astoriane.jcr.config.commands.Command;
+import net.astoriane.jcr.config.commands.Commands;
 import net.astoriane.jcr.core.handler.States;
-import net.astoriane.jcr.lib.Commands;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 
@@ -14,8 +15,6 @@ public class KernelModule implements Module {
 	private String name;
 	private String unlocalizedName;
 
-	private String[] commands;
-
 	public KernelModule(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -26,8 +25,6 @@ public class KernelModule implements Module {
 	public void load() {
 
 		state = States.STARTUP;
-
-		commands = Commands.commands;
 
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE
 				+ Strings.LOCALE_MODULE_KERNEL_NAME);
@@ -41,83 +38,48 @@ public class KernelModule implements Module {
 	@Override
 	public void loop() {
 
-		String in;
+		state = States.WORKING;
 
-		boolean flag = false;
+		String input;
 
 		Main.logger.logSingle(Strings.LOCALE_MODULE_KERNEL_DATE_ENTER);
 		CommandInput.init();
-		in = CommandInput.getString();
+		input = CommandInput.getString();
 
-		String[] input = in.split("\\s+");
+		String[] array = input.split("\\s+");
 
-		loopCheck: for (String s : commands) {
-			if (input != null || !input[0].isEmpty()) {
+		Command command;
 
-				switch (input[0]) {
+		loopCommands: for (Command cmd : Commands.commands) {
+			if (0 < array.length && !array[0].isEmpty()) {
 
-				case "launch":
-					if (!(input.length < 2)) {
-						loopModule: for (Module mod : Modules.list) {
-							switch (input[1]) {
-
-							case "subtitleModule":
-								flag = true;
-								Modules.subtitleModule.launch();
-								break loopModule;
-							case "kernelModule":
-								flag = true;
-								Modules.kernelModule.launch();
-								break loopModule;
-							default:
-								flag = true;
-								continue loopCheck;
-
-							}
-						}
-					} else {
-						Main.logger.line();
-						Main.logger.log("Usage: " + commands[0]
-								+ " <moduleName>");
-						Main.logger.log(Strings.LOCALE_MODULE_KERNEL_COMMANDS);
-						for (Module m : Modules.list)
-							Main.logger.log("- " + m.getUnlocalizedName()
-									+ " : " + m.getName());
-						Main.logger.line();
-						break loopCheck;
-					}
-				case "help":
-					Main.logger.line();
-					Main.logger.log(Strings.LOCALE_MODULE_KERNEL_COMMANDS);
-					for (String cmd : commands)
-						Main.logger.log("- " + cmd);
-
-					break loopCheck;
-				case "exit":
-					flag = true;
+				
+				
+				if(cmd.getName().equals(array[0])) {
+					Commands.getCommandFromName(array[0]).run(array);
 					state = States.EXIT;
-					break loopCheck;
-				default:
-					flag = true;
-					break loopCheck;
-
+					break loopCommands;
+				} else {
+					//TODO Error here
+					state = States.IDLE;
+					continue loopCommands;
 				}
 
-			} else {
-				flag = false;
-				continue loopCheck;
-			}
-		}
 
-		if (!flag) {
-			Main.logger.log("Please enter a command.");
+				
+			} else {
+				state = States.IDLE;
+				continue;
+			}
+			
 		}
 
 	}
 
 	@Override
 	public void exit() {
-		// TODO Auto-generated method stub
+		
+		state = States.EXIT;
 
 	}
 
@@ -130,8 +92,7 @@ public class KernelModule implements Module {
 			loop();
 		}
 
-		if (state == States.EXIT)
-			exit();
+		exit();
 
 	}
 

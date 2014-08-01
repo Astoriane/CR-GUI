@@ -1,5 +1,6 @@
 package net.astoriane.jcr;
 
+import net.astoriane.jcr.config.commands.Commands;
 import net.astoriane.jcr.core.handler.ShutdownHandler;
 import net.astoriane.jcr.core.handler.StartupHandler;
 import net.astoriane.jcr.core.module.Modules;
@@ -12,6 +13,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		StartupHandler.init();
+		
+		Commands.init();
 
 		Modules.addList();
 

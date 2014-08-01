@@ -7,27 +7,37 @@ public class Strings {
 	public static String LOCALE_SYSTEM_CREATE_CONFIG;
 	public static String LOCALE_SYSTEM_CREATE_DIR;
 	public static String LOCALE_SYSTEM_LOAD_CONFIG;
+	public static String LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS;
+	public static String LOCALE_SYSTEM_LOAD_CONFIG_ERROR;
+	public static String LOCALE_SYSTEM_SAVE_CONFIG;
+	public static String LOCALE_SYSTEM_SAVE_CONFIG_SUCCESS;
+	public static String LOCALE_SYSTEM_SAVE_CONFIG_ERROR;
 	public static String LOCALE_SYSTEM_DATA_ENTER;
 	public static String LOCALE_SYSTEM_LOAD_MODULE;
+	public static String LOCALE_SYSTEM_SHUTDOWN;
 
 	public static String LOCALE_MODULE_KERNEL_NAME;
 	public static String LOCALE_MODULE_KERNEL_STARTUP;
 	public static String LOCALE_MODULE_KERNEL_DATE_ENTER;
 	public static String LOCALE_MODULE_KERNEL_COMMANDS;
+	public static String LOCALE_MODULE_KERNEL_ERROR_INVALID;
+	public static String LOCALE_MODULE_KERNEL_ERROR_EMPTY;
 
 	public static String LOCALE_MODULE_SUBTITLE_NAME;
 	public static String LOCALE_MODULE_SUBTITLE_STARTUP;
+	public static String LOCALE_MODULE_SUBTITLE_LAUNCH_SCRIPT;
 	public static String LOCALE_MODULE_SUBTITLE_LOADED_CONFIG;
 	public static String LOCALE_MODULE_SUBTITLE_LOADED_SCRIPT;
 	public static String LOCALE_MODULE_SUBTITLE_DOWNLOAD;
 	public static String LOCALE_MODULE_SUBTITLE_SUCCESS;
 	public static String LOCALE_MODULE_SUBTITLE_ERROR;
+	public static String LOCALE_MODULE_SUBTITLE_ERROR_URL;
 
 	// Access keys
 	public static final String SYSTEM_STARTUP = "system.startup";
 	public static final String SYSTEM_CREATE_CONFIG = "system.createConfig";
 	public static final String SYSTEM_CREATE_DIR = "system.createDir";
-	public static final String SYSTEM_LOAD_CONFIG = "system.loadConfig";
+	public static final String SYSTEM_LOAD_CONFIG = "system.loadConfig.success";
 	public static final String SYSTEM_DATA_ENTER = "system.enterData";
 	public static final String SYSTEM_LOAD_MODULE = "system.loadModule";
 
