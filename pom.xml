@@ -4,7 +4,7 @@
 	<groupId>net.astoriane.jcr</groupId>
 	<artifactId>jCrunchyroll</artifactId>
 	<packaging>jar</packaging>
-	<version>0.02-beta</version>
+	<version>0.03-beta</version>
 	<name>jCrunchyroll</name>
 	<url>https://github.com/Astoriane/CR-GUI</url>
 	<properties>
@@ -96,13 +96,13 @@
 							<icon>src/main/resources/images/application.ico</icon>
 							<versionInfo>
 								<fileVersion>0.0.0.1</fileVersion>
-								<txtFileVersion>0.02-beta</txtFileVersion>
+								<txtFileVersion>${project.version}</txtFileVersion>
 								<fileDescription>Java wrapper for Crunchyroll</fileDescription>
 								<copyright>2014 - Astoriane</copyright>
 								<productVersion>0.0.0.2</productVersion>
-								<txtProductVersion>0.02-beta</txtProductVersion>
-								<productName>jCrunchyroll</productName>
-								<internalName>jCrunchyroll</internalName>
+								<txtProductVersion>${project.version}</txtProductVersion>
+								<productName>${project.name}</productName>
+								<internalName>${project.name}</internalName>
 								<originalFilename>original.exe</originalFilename>
 							</versionInfo>
 						</configuration>

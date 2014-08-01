@@ -33,7 +33,7 @@ public class StartupHandler {
 		}
 		
 		System.out.println(frame);
-		System.out.println("jCrunchyroll - Version: 0.02-beta - " + new Date().toString());
+		System.out.println("jCrunchyroll - Version: 0.03-beta - " + new Date().toString());
 		System.out.println();
 	}
 	
