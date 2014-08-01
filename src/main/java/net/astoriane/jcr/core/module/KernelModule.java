@@ -53,7 +53,7 @@ public class KernelModule implements Module {
 
 		if (0 < array.length && !array[0].isEmpty()) {
 
-			for (Command cmd : Commands.commands) {
+			for (Command cmd : Commands.list) {
 
 				if (cmd.getName().equals(array[0])) {
 					flag = true;

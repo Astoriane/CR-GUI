@@ -7,7 +7,7 @@ import net.astoriane.jcr.lib.Strings;
 
 public class Commands {
 
-	public static List<Command> commands = new ArrayList<Command>();
+	public static List<Command> list = new ArrayList<Command>();
 
 	public static Command exit;
 	public static Command help;
@@ -19,15 +19,15 @@ public class Commands {
 		help = new CommandHelp(1, "help");
 		launch = new CommandLaunch(2, "launch");
 		
-		commands.add(exit.getId(), exit);
-		commands.add(help.getId(), help);
-		commands.add(launch.getId(), launch);
+		list.add(exit.getId(), exit);
+		list.add(help.getId(), help);
+		list.add(launch.getId(), launch);
 		
 	}
 
 	public static Command getCommandFromName(String s) {
 
-		for (Command cmd : commands) {
+		for (Command cmd : list) {
 			if (cmd.getName().equals(s)) {
 				return cmd;
 			} else

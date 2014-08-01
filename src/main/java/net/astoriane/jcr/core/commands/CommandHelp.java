@@ -22,7 +22,7 @@ public class CommandHelp implements Command {
 		Main.logger.line();
 		Main.logger.log(Strings.LOCALE_MODULE_KERNEL_COMMANDS);
 		
-		for(Command cmd : Commands.commands) {
+		for(Command cmd : Commands.list) {
 			Main.logger.log("- " + cmd.getName());
 		}
 		

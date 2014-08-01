@@ -1,6 +1,8 @@
-# 31.07.2014, 13:47 TODO List of Thursday
------------------------------------------
+TODO List (Not in order):
 
-* Module load by user input system.
-* Cookie saving methods.
-* Crunchyroll login script.
+	* Module load by user input system. --DONE
+	* Externalize every hardcoded string. 
+	* Command Line module for launching commandline with swag. --IN WORKS
+	* Cookie saving methods.
+	* Crunchyroll login script.
+	* 
