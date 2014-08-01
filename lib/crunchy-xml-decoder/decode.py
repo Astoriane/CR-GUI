@@ -94,4 +94,4 @@ subfile.write(formattedSubs.encode('utf-8-sig'))
 subfile.close()
 print 'Subtitles for ' + title + ' have been downloaded'
 print 'Script terminated.'
-print '-------------------------------------------------'
+print '----------------------------'

@@ -9,5 +9,9 @@ public class Logger {
 	public void logSingle(String s) {
 		System.out.print(s);
 	}
+	
+	public void line() {
+		System.out.println();
+	}
 
 }

@@ -1,7 +1,9 @@
 package net.astoriane.jcr.core.module;
 
+import net.astoriane.jcr.Main;
 import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.core.subtitles.DownloadSubtitles;
+import net.astoriane.jcr.lib.Strings;
 
 public class SubtitleModule implements Module {
 
@@ -19,6 +21,15 @@ public class SubtitleModule implements Module {
 
 	@Override
 	public void load() {
+		
+		state = States.STARTUP;
+		
+		Main.logger.line();
+		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_SUBTITLE_NAME);
+		Main.logger.log(Strings.LOCALE_MODULE_SUBTITLE_STARTUP);
+		Main.logger.line();
+		
+		state = States.IDLE;
 
 	}
 
@@ -32,7 +43,7 @@ public class SubtitleModule implements Module {
 
 	@Override
 	public void exit() {
-
+		Modules.loaderModule.launch();
 	}
 
 	@Override

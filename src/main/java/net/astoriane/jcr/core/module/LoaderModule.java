@@ -3,6 +3,7 @@ package net.astoriane.jcr.core.module;
 import net.astoriane.jcr.Main;
 import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.lib.Commands;
+import net.astoriane.jcr.lib.Reference;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 
@@ -31,6 +32,8 @@ public class LoaderModule implements Module {
 
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE
 				+ Strings.LOCALE_MODULE_LOADER_NAME);
+		Main.logger.log(Strings.LOCALE_MODULE_LOADER_STARTUP);
+		Main.logger.line();
 
 		state = States.IDLE;
 
@@ -39,9 +42,70 @@ public class LoaderModule implements Module {
 	@Override
 	public void loop() {
 
-		String input;
-		
-		Main.logger.logSingle("");
+		String in;
+
+		boolean flag = false;
+
+		Main.logger.logSingle(Strings.LOCALE_MODULE_LOADER_DATE_ENTER);
+		CommandInput.init();
+		in = CommandInput.getString();
+
+		String[] input = in.split("\\s+");
+
+		loopCheck: for (String s : commands) {
+			if (input != null || !input[0].isEmpty()) {
+
+				switch (input[0]) {
+
+				case "launch":
+					if (!(input.length < 2)) {
+						loopModule: for (Module mod : Modules.list) {
+							switch (input[1]) {
+
+							case "subtitleModule":
+								flag = true;
+								Modules.subtitleModule.launch();
+								break loopModule;
+							case "loaderModule":
+								flag = true;
+								Modules.loaderModule.launch();
+								break loopModule;
+							default:
+								flag = true;
+								continue loopCheck;
+
+							}
+						}
+					} else {
+
+						break loopCheck;
+					}
+				case "help":
+
+					Main.logger.log(Strings.LOCALE_MODULE_LOADER_COMMANDS);
+					for (String cmd : commands)
+						Main.logger.log("- " + cmd);
+
+					break loopCheck;
+				case "exit":
+					flag = true;
+					state = States.EXIT;
+					break loopCheck;
+				default:
+					flag = true;
+					break loopCheck;
+
+				}
+
+			} else {
+				flag = false;
+				continue loopCheck;
+			}
+		}
+
+		if (!flag) {
+			Main.logger.log("Please enter a command.");
+		}
 
 	}
 

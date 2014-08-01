@@ -60,7 +60,7 @@ public class Strings {
 	public static final String MODULE_LOADER_DATA_ENTER_DEFAULT = "Enter command: ";
 
 	public static final String MODULE_SUBTITLE_NAME_DEFAULT = "Subtitle Module";
-	public static final String MODULE_SUBTITLE_STARTUP_DEFAULT = "Module: Subtitle Ripper - Launched";
+	public static final String MODULE_SUBTITLE_STARTUP_DEFAULT = "jCrunchyroll Subtitle Module v0.3";
 	public static final String MODULE_SUBTITLE_LOADED_CONFIG_DEFAULT = "Subtitle module configuration - Loaded";
 	public static final String MODULE_SUBTITLE_LOADED_SCRIPT_DEFAULT = "Loaded parsing script from python library.";
 	public static final String MODULE_SUBTITLE_DOWNLOAD_DEFAULT = "Commencing download operation.";
