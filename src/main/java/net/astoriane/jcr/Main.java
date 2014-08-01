@@ -1,5 +1,6 @@
 package net.astoriane.jcr;
 
+import net.astoriane.jcr.config.Settings;
 import net.astoriane.jcr.core.commands.Commands;
 import net.astoriane.jcr.core.handler.ShutdownHandler;
 import net.astoriane.jcr.core.handler.StartupHandler;
@@ -11,12 +12,14 @@ public class Main {
 	public static Logger logger = new Logger();
 
 	public static void main(String[] args) {
-
+		
 		StartupHandler.init();
 
 		Commands.init();
 
 		Modules.addList();
+		
+		Settings.list();
 
 		if (args == null || args.length <= 0)
 			Modules.kernelModule.launch();

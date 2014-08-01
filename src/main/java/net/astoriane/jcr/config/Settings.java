@@ -1,10 +1,15 @@
 package net.astoriane.jcr.config;
 
-public class Settings {
+import java.util.ArrayList;
+import java.util.List;
 
-	public static final String appLanguage_Name = "App-Language";
-	public static final String videoQuality_Name = "Video-Quality";
-	public static final String subtitleLanguage_Name = "Subtitle-Language";
+public class Settings {
+	
+	public static List<String> opts = new ArrayList<>();
+
+	public static final String appLanguage_Name = "appLanguage";
+	public static final String videoQuality_Name = "videoQuality";
+	public static final String subtitleLanguage_Name = "subtitleLanguage";
 
 	public static String appLanguage;
 
@@ -25,6 +30,12 @@ public class Settings {
 
 	public static void setSubtitleLanguage(String language) {
 		subtitleLanguage = language;
+	}
+	
+	public static void list() {
+		opts.add(appLanguage_Name);
+		opts.add(videoQuality_Name);
+		opts.add(subtitleLanguage_Name);
 	}
 
 }

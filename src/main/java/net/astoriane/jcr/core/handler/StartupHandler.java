@@ -9,7 +9,7 @@ import net.astoriane.jcr.lib.Locales;
 public class StartupHandler {
 
 	public static void init() {
-
+		
 		startupMessage();
 
 		Locales.list();
@@ -37,7 +37,6 @@ public class StartupHandler {
 
 		System.out.println(frame);
 		System.out.println("jCrunchyroll - Version: 0.03-beta - " + new Date().toString());
-		System.out.println();
 	}
 
 	private static String[] asciiMsg = { "   _ _____                       _                     _ _ ",

@@ -41,6 +41,7 @@ public class Configuration {
 
 		try {
 			loadConfig(prop, input);
+			Main.logger.line();
 			Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_CONFIG_SUCCESS);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -97,6 +98,21 @@ public class Configuration {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+	}
+	
+	public static void setConfigOption(String key, String value) {
+		try {
+			output = new FileOutputStream(configFile);
+			
+			prop.setProperty(key, value);
+			prop.store(output, null);
+			
+			if(output != null)
+				output.close();
+			
+		} catch(Exception e) {
+			
+		}
 	}
 
 	public static File getConfigFile() {

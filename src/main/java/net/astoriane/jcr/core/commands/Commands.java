@@ -12,16 +12,19 @@ public class Commands {
 	public static Command exit;
 	public static Command help;
 	public static Command launch;
+	public static Command config;
 
 	public static void init() {
 		
 		exit = new CommandExit(0, "exit");
 		help = new CommandHelp(1, "help");
 		launch = new CommandLaunch(2, "launch");
+		config = new CommandConfigure(3, "configure");
 		
 		list.add(exit.getId(), exit);
 		list.add(help.getId(), help);
 		list.add(launch.getId(), launch);
+		list.add(config.getId(), config);
 		
 	}
 

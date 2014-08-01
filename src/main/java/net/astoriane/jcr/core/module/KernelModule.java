@@ -1,8 +1,10 @@
 package net.astoriane.jcr.core.module;
 
 import net.astoriane.jcr.Main;
+import net.astoriane.jcr.config.Settings;
 import net.astoriane.jcr.core.commands.Command;
 import net.astoriane.jcr.core.commands.Commands;
+import net.astoriane.jcr.core.handler.StartupHandler;
 import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
@@ -61,14 +63,18 @@ public class KernelModule implements Module {
 					command = Commands.getCommandFromName(array[0]);
 					command.run(array);
 				}
-				
+
 				state = States.IDLE;
 
 			}
 
-			if (!command.returnValue()) {
+			if (command != null) {
+				if (!command.returnValue()) {
+					Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
+					state = States.IDLE;
+				}
+			} else {
 				Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
-				state = States.IDLE;
 			}
 
 		} else if (array[0].isEmpty()) {
