@@ -33,24 +33,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-				<executions>
-					<execution>
-						<id>assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>attached</goal>
-						</goals>
-						<configuration>
-							<descriptors>
-								<descriptor>dep.xml</descriptor>
-							</descriptors>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.5</version>
@@ -77,7 +59,7 @@
 				<executions>
 					<execution>
 						<id>l4j-clui</id>
-						<phase>release</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>launch4j</goal>
 						</goals>
@@ -106,6 +88,24 @@
 								<internalName>${project.name}</internalName>
 								<originalFilename>original.exe</originalFilename>
 							</versionInfo>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attached</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>dep.xml</descriptor>
+							</descriptors>
 						</configuration>
 					</execution>
 				</executions>
