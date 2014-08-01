@@ -12,10 +12,13 @@ public class SubtitleDecoder {
 
 	public static void downloadSubtitles(String url, String lang) {
 
-		PythonLauncher.launchPythonScript("lib/crunchy-xml-decoder/decode.py", url + " " + lang);
+		PythonLauncher.launchPythonScript("lib/crunchy-xml-decoder/decode.py",
+				url + " " + lang);
 
 		File subFile = new File("export.ass"), destFile = new File(
-				"downloads/subs/" + CrunchyUrl.getSeriesFromUrl(url).replaceAll("[^a-zA-Z0-9\\.\\-]", " ") + ".ass");
+				"downloads/subs/"
+						+ CrunchyUrl.getSeriesFromUrl(url).replaceAll(
+								"[^a-zA-Z0-9\\.\\-]", " ") + ".ass");
 
 		try {
 			if (subFile.exists() && !destFile.exists())

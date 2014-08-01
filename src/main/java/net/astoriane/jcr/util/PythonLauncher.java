@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class PythonLauncher {
-	
+
 	private static boolean isTerminated = false;
 
 	private static void getConsoleOutput(Process p) {
@@ -34,7 +34,8 @@ public class PythonLauncher {
 
 	public static void launchPythonScript(String pathToScript, String args) {
 		try {
-			Process p = Runtime.getRuntime().exec("python " + pathToScript + " " + args);
+			Process p = Runtime.getRuntime().exec(
+					"python " + pathToScript + " " + args);
 			getConsoleOutput(p);
 			p.waitFor();
 			Thread.sleep(1000);
@@ -45,7 +46,7 @@ public class PythonLauncher {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static boolean isProcessTerminated() {
 		return isTerminated;
 	}

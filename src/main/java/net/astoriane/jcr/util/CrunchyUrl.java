@@ -136,12 +136,12 @@ public class CrunchyUrl {
 			return "";
 		}
 	}
-	
+
 	public static String getUnalteredTitle(String url) {
 		try {
 			String name = getPageTitle(url).replace("Crunchyroll - Watch ", "");
 			return name;
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}

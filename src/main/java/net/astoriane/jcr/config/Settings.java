@@ -7,7 +7,7 @@ public class Settings {
 	public static final String subtitleLanguage_Name = "Subtitle-Language";
 
 	public static String appLanguage;
-	
+
 	// Available video qualities are: "android", "360p", "480p", "720p", "1080p"
 	public static String videoQuality;
 

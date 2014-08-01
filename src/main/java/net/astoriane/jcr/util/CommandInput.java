@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class CommandInput {
-	
+
 	private static String read;
 
 	public static void init() {
@@ -13,8 +13,7 @@ public class CommandInput {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		String str = null;
-		
-		
+
 		try {
 			str = br.readLine();
 			read = str;
@@ -24,7 +23,7 @@ public class CommandInput {
 		}
 
 	}
-	
+
 	public static String getString() {
 		return read;
 	}

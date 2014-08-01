@@ -76,14 +76,14 @@ public class LocalizationHandler {
 			Strings.LOCALE_SYSTEM_LOAD_MODULE = p
 					.getProperty(Strings.SYSTEM_LOAD_MODULE);
 
-			Strings.LOCALE_MODULE_LOADER_NAME = p
-					.getProperty(Strings.MODULE_LOADER_NAME);
-			Strings.LOCALE_MODULE_LOADER_STARTUP = p
-					.getProperty(Strings.MODULE_LOADER_STARTUP);
-			Strings.LOCALE_MODULE_LOADER_COMMANDS = p
-					.getProperty(Strings.MODULE_LOADER_COMMANDS);
-			Strings.LOCALE_MODULE_LOADER_DATE_ENTER = p
-					.getProperty(Strings.MODULE_LOADER_DATA_ENTER);
+			Strings.LOCALE_MODULE_KERNEL_NAME = p
+					.getProperty(Strings.MODULE_KERNEL_NAME);
+			Strings.LOCALE_MODULE_KERNEL_STARTUP = p
+					.getProperty(Strings.MODULE_KERNEL_STARTUP);
+			Strings.LOCALE_MODULE_KERNEL_COMMANDS = p
+					.getProperty(Strings.MODULE_KERNEL_COMMANDS);
+			Strings.LOCALE_MODULE_KERNEL_DATE_ENTER = p
+					.getProperty(Strings.MODULE_KERNEL_DATA_ENTER);
 
 			Strings.LOCALE_MODULE_SUBTITLE_NAME = p
 					.getProperty(Strings.MODULE_SUBTITLE_NAME);
@@ -134,14 +134,14 @@ public class LocalizationHandler {
 			p.setProperty(Strings.SYSTEM_LOAD_MODULE,
 					Strings.SYSTEM_LOAD_MODULE_DEFAULT);
 
-			p.setProperty(Strings.MODULE_LOADER_NAME,
-					Strings.MODULE_LOADER_NAME_DEFAULT);
-			p.setProperty(Strings.MODULE_LOADER_STARTUP,
-					Strings.MODULE_LOADER_STARTUP_DEFAULT);
-			p.setProperty(Strings.MODULE_LOADER_COMMANDS,
-					Strings.MODULE_LOADER_COMMANDS_DEFAULT);
-			p.setProperty(Strings.MODULE_LOADER_DATA_ENTER,
-					Strings.MODULE_LOADER_DATA_ENTER_DEFAULT);
+			p.setProperty(Strings.MODULE_KERNEL_NAME,
+					Strings.MODULE_KERNEL_NAME_DEFAULT);
+			p.setProperty(Strings.MODULE_KERNEL_STARTUP,
+					Strings.MODULE_KERNEL_STARTUP_DEFAULT);
+			p.setProperty(Strings.MODULE_KERNEL_COMMANDS,
+					Strings.MODULE_KERNEL_COMMANDS_DEFAULT);
+			p.setProperty(Strings.MODULE_KERNEL_DATA_ENTER,
+					Strings.MODULE_KERNEL_DATA_ENTER_DEFAULT);
 
 			p.setProperty(Strings.MODULE_SUBTITLE_NAME,
 					Strings.MODULE_SUBTITLE_NAME_DEFAULT);

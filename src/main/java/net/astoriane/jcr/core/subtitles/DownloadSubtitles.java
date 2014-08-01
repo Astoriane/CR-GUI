@@ -5,7 +5,6 @@ import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 import net.astoriane.jcr.util.CrunchyUrl;
-import net.astoriane.jcr.util.PythonLauncher;
 import net.astoriane.jcr.util.SysMessage;
 
 public class DownloadSubtitles {

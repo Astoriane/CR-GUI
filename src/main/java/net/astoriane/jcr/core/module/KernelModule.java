@@ -3,11 +3,10 @@ package net.astoriane.jcr.core.module;
 import net.astoriane.jcr.Main;
 import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.lib.Commands;
-import net.astoriane.jcr.lib.Reference;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 
-public class LoaderModule implements Module {
+public class KernelModule implements Module {
 
 	private States state;
 
@@ -17,10 +16,10 @@ public class LoaderModule implements Module {
 
 	private String[] commands;
 
-	public LoaderModule(int id, String name) {
+	public KernelModule(int id, String name) {
 		this.id = id;
 		this.name = name;
-		setUnlocalizedName("loaderModule");
+		setUnlocalizedName("kernelModule");
 	}
 
 	@Override
@@ -31,8 +30,8 @@ public class LoaderModule implements Module {
 		commands = Commands.commands;
 
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE
-				+ Strings.LOCALE_MODULE_LOADER_NAME);
-		Main.logger.log(Strings.LOCALE_MODULE_LOADER_STARTUP);
+				+ Strings.LOCALE_MODULE_KERNEL_NAME);
+		Main.logger.log(Strings.LOCALE_MODULE_KERNEL_STARTUP);
 		Main.logger.line();
 
 		state = States.IDLE;
@@ -46,7 +45,7 @@ public class LoaderModule implements Module {
 
 		boolean flag = false;
 
-		Main.logger.logSingle(Strings.LOCALE_MODULE_LOADER_DATE_ENTER);
+		Main.logger.logSingle(Strings.LOCALE_MODULE_KERNEL_DATE_ENTER);
 		CommandInput.init();
 		in = CommandInput.getString();
 
@@ -66,9 +65,9 @@ public class LoaderModule implements Module {
 								flag = true;
 								Modules.subtitleModule.launch();
 								break loopModule;
-							case "loaderModule":
+							case "kernelModule":
 								flag = true;
-								Modules.loaderModule.launch();
+								Modules.kernelModule.launch();
 								break loopModule;
 							default:
 								flag = true;
@@ -77,12 +76,19 @@ public class LoaderModule implements Module {
 							}
 						}
 					} else {
-
+						Main.logger.line();
+						Main.logger.log("Usage: " + commands[0]
+								+ " <moduleName>");
+						Main.logger.log(Strings.LOCALE_MODULE_KERNEL_COMMANDS);
+						for (Module m : Modules.list)
+							Main.logger.log("- " + m.getUnlocalizedName()
+									+ " : " + m.getName());
+						Main.logger.line();
 						break loopCheck;
 					}
 				case "help":
-
-					Main.logger.log(Strings.LOCALE_MODULE_LOADER_COMMANDS);
+					Main.logger.line();
+					Main.logger.log(Strings.LOCALE_MODULE_KERNEL_COMMANDS);
 					for (String cmd : commands)
 						Main.logger.log("- " + cmd);
 
@@ -143,8 +149,8 @@ public class LoaderModule implements Module {
 		this.unlocalizedName = s;
 	}
 
+	@Override
 	public String getUnlocalizedName() {
 		return unlocalizedName;
 	}
-
 }

@@ -24,12 +24,13 @@ public class Configuration {
 	public static void init() {
 
 		if (createFiles()) {
-			
+
 			try {
 
 				output = new FileOutputStream(configFile);
 
-				prop.setProperty(Settings.appLanguage_Name, Settings.appLanguage_Default);
+				prop.setProperty(Settings.appLanguage_Name,
+						Settings.appLanguage_Default);
 				prop.setProperty(Settings.videoQuality_Name,
 						Settings.videoQuality_Default);
 				prop.setProperty(Settings.subtitleLanguage_Name,
@@ -64,7 +65,8 @@ public class Configuration {
 			}
 			if (configPath.exists() && configFile.exists()) {
 				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_CONFIG);
-				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_DIR + configPath.getPath());
+				Main.logger.log(Strings.LOCALE_SYSTEM_CREATE_DIR
+						+ configPath.getPath());
 				return true;
 			} else
 				return false;

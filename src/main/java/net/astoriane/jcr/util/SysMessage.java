@@ -9,10 +9,10 @@ public class SysMessage {
 		char[] chars = new char[num];
 		Arrays.fill(chars, '-');
 		String frame = new String(chars);
-		
+
 		System.out.println(frame);
 		System.out.println(msg);
 		System.out.println(frame);
 	}
-	
+
 }

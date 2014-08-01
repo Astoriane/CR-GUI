@@ -12,7 +12,7 @@ public class SubtitleModule implements Module {
 	private int id;
 	private String name;
 	private String unlocalizedName;
-	
+
 	public SubtitleModule(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -21,14 +21,15 @@ public class SubtitleModule implements Module {
 
 	@Override
 	public void load() {
-		
+
 		state = States.STARTUP;
-		
+
 		Main.logger.line();
-		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_SUBTITLE_NAME);
+		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE
+				+ Strings.LOCALE_MODULE_SUBTITLE_NAME);
 		Main.logger.log(Strings.LOCALE_MODULE_SUBTITLE_STARTUP);
 		Main.logger.line();
-		
+
 		state = States.IDLE;
 
 	}
@@ -43,7 +44,7 @@ public class SubtitleModule implements Module {
 
 	@Override
 	public void exit() {
-		Modules.loaderModule.launch();
+		Modules.kernelModule.launch();
 	}
 
 	@Override
@@ -65,7 +66,7 @@ public class SubtitleModule implements Module {
 	public int getId() {
 		return id;
 	}
-	
+
 	@Override
 	public String getName() {
 		return name;
@@ -74,7 +75,8 @@ public class SubtitleModule implements Module {
 	private void setUnlocalizedName(String s) {
 		this.unlocalizedName = s;
 	}
-	
+
+	@Override
 	public String getUnlocalizedName() {
 		return unlocalizedName;
 	}
