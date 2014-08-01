@@ -7,5 +7,7 @@ public interface Command {
 	public String getName();
 
 	public int getId();
+	
+	public boolean returnValue();
 
 }

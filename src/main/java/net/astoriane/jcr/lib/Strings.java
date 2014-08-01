@@ -20,6 +20,7 @@ public class Strings {
 	public static String LOCALE_MODULE_KERNEL_STARTUP;
 	public static String LOCALE_MODULE_KERNEL_DATA_ENTER;
 	public static String LOCALE_MODULE_KERNEL_COMMANDS;
+	public static String LOCALE_MODULE_KERNEL_COMMANDS_USAGE;
 	public static String LOCALE_MODULE_KERNEL_ERROR_INVALID;
 	public static String LOCALE_MODULE_KERNEL_ERROR_EMPTY;
 
@@ -50,6 +51,7 @@ public class Strings {
 	public static final String MODULE_KERNEL_NAME = "module.kernel.name";
 	public static final String MODULE_KERNEL_STARTUP = "module.kernel.startup";
 	public static final String MODULE_KERNEL_COMMANDS = "module.kernel.commands";
+	public static final String MODULE_KERNEL_COMMANDS_USAGE = "module.kernel.commandsUsage";
 	public static final String MODULE_KERNEL_DATA_ENTER = "module.kernel.enterData";
 	public static final String MODULE_KERNEL_ERROR_INVALID = "module.kernel.errorInvalid";
 	public static final String MODULE_KERNEL_ERROR_EMPTY = "module.kernel.errorEmpty";
@@ -81,6 +83,7 @@ public class Strings {
 	public static final String MODULE_KERNEL_NAME_DEFAULT = "Kernel Module";
 	public static final String MODULE_KERNEL_STARTUP_DEFAULT = "jCrunchyroll Kernel Module v1.2";
 	public static final String MODULE_KERNEL_COMMANDS_DEFAULT = "Available commands: ";
+	public static final String MODULE_KERNEL_COMMANDS_USAGE_DEFAULT = "Usage: ";
 	public static final String MODULE_KERNEL_DATA_ENTER_DEFAULT = "Enter command: ";
 	public static final String MODULE_KERNEL_ERROR_INVALID_DEFAULT = "Given command is invalid please try again.";
 	public static final String MODULE_KERNEL_ERROR_EMPTY_DEFAULT = "Please enter a command to proceed, type 'help' for more info.";

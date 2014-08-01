@@ -39,6 +39,8 @@ public class KernelModule implements Module {
 
 		state = States.WORKING;
 
+		boolean flag = false;
+
 		String input;
 
 		Main.logger.logSingle(Strings.LOCALE_MODULE_KERNEL_DATA_ENTER);
@@ -47,30 +49,33 @@ public class KernelModule implements Module {
 
 		String[] array = input.split("\\s+");
 
-		Command command;
+		Command command = null;
 
-		loopCommands: for (Command cmd : Commands.commands) {
-			if (0 < array.length && !array[0].isEmpty()) {
+		if (0 < array.length && !array[0].isEmpty()) {
+
+			for (Command cmd : Commands.commands) {
 
 				if (cmd.getName().equals(array[0])) {
-					Commands.getCommandFromName(array[0]).run(array);
-					state = States.EXIT;
-					break loopCommands;
-				} else {
-					Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
-					state = States.IDLE;
-					continue loopCommands;
+					flag = true;
+					command = Commands.getCommandFromName(array[0]);
+					command.run(array);
 				}
+				
+				state = States.IDLE;
 
-			} else if (array[0].isEmpty()) {
-				Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_EMPTY);
-				state = States.IDLE;
-				break loopCommands;
-			} else {
-				state = States.IDLE;
-				continue;
 			}
 
+			if (!command.returnValue()) {
+				Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
+				state = States.IDLE;
+			}
+
+		} else if (array[0].isEmpty()) {
+			Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_EMPTY);
+			state = States.IDLE;
+
+		} else {
+			state = States.IDLE;
 		}
 
 	}

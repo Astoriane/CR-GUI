@@ -3,16 +3,23 @@ package net.astoriane.jcr.core.commands;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.astoriane.jcr.lib.Strings;
+
 public class Commands {
 
 	public static List<Command> commands = new ArrayList<Command>();
 
-	public static Command exit = new CommandExit(0, "exit");
+	public static Command exit;
+	public static Command launch;
 
 	public static void init() {
-
+		
+		exit = new CommandExit(0, "exit");
+		launch = new CommandLaunch(2, "launch");
+		
 		commands.add(exit);
-
+		commands.add(launch);
+		
 	}
 
 	public static Command getCommandFromName(String s) {

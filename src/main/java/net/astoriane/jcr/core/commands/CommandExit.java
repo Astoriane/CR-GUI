@@ -6,6 +6,8 @@ public class CommandExit implements Command {
 
 	private int id;
 	private String name;
+	
+	private boolean returnValue;
 
 	public CommandExit(int id, String name) {
 		this.id = id;
@@ -15,6 +17,7 @@ public class CommandExit implements Command {
 	@Override
 	public void run(String[] data) {
 
+		returnValue = true;
 		ShutdownHandler.init();
 		System.exit(0);
 
@@ -28,6 +31,11 @@ public class CommandExit implements Command {
 	@Override
 	public int getId() {
 		return id;
+	}
+
+	@Override
+	public boolean returnValue() {
+		return returnValue;
 	}
 
 }

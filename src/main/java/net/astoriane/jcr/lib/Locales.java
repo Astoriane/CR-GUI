@@ -36,6 +36,7 @@ public class Locales {
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_NAME);
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_STARTUP);
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_COMMANDS);
+				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_COMMANDS_USAGE);
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_DATA_ENTER);
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_ERROR_INVALID);
 				entries.add(getNextEntryID(), Strings.MODULE_KERNEL_ERROR_EMPTY);
@@ -76,6 +77,7 @@ public class Locales {
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_NAME_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_STARTUP_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_COMMANDS_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_COMMANDS_USAGE_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_DATA_ENTER_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_ERROR_INVALID_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_KERNEL_ERROR_EMPTY_DEFAULT);
