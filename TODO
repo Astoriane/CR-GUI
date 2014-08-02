@@ -1,7 +1,7 @@
 FOR TOMORROW:
 
-	* Wrap up the login thingy.
-	* Rewrite subtitle module with commands. (url, launch, exit)
+	* Wrap up the login thingy. --DONE
+	* Rewrite subtitle module with commands. (url, launch, exit) --WIP
 	* Externalize more strings.
 
 TODO List (Not in order):

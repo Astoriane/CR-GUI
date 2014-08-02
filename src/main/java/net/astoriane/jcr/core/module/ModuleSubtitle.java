@@ -79,4 +79,9 @@ public class ModuleSubtitle implements Module {
 	public String getUnlocalizedName() {
 		return unlocalizedName;
 	}
+
+	@Override
+	public void setState(State state) {
+		this.state = state;
+	}
 }

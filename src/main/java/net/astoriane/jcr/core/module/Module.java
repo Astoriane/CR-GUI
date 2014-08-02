@@ -1,5 +1,7 @@
 package net.astoriane.jcr.core.module;
 
+import net.astoriane.jcr.lib.State;
+
 public interface Module {
 
 	public void load();
@@ -15,5 +17,7 @@ public interface Module {
 	public String getUnlocalizedName();
 
 	public String getName();
+	
+	public void setState(State state);
 
 }

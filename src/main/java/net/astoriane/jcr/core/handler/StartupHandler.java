@@ -1,10 +1,16 @@
 package net.astoriane.jcr.core.handler;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Date;
 
+import net.astoriane.jcr.Main;
 import net.astoriane.jcr.config.Configuration;
+import net.astoriane.jcr.core.module.Modules;
 import net.astoriane.jcr.lib.Locales;
+import net.astoriane.jcr.util.CommandInput;
+import net.astoriane.jcr.util.Utils;
 
 public class StartupHandler {
 
@@ -19,6 +25,8 @@ public class StartupHandler {
 
 		// Initialize configuration files.
 		Configuration.init();
+		
+		checkCookies(new File("config/cookies.txt"));
 
 	}
 
@@ -49,5 +57,51 @@ public class StartupHandler {
 			"|__/                                   |___/               "
 
 	};
+	
+	private static void checkCookies(File cookieFile) {
+		try {
+			if(!cookieFile.exists()) {
+				Main.logger.line();
+				Main.logger.logSingle("Cookie file does not exist, want to login to Crunchyroll? (y/n): ");
+				CommandInput.init();
+				String input = CommandInput.getString();
+				
+				switch(input) {
+				case "y":
+					Modules.loginModule.launch();
+					break;
+				case "n":
+					break;
+					default: 
+						break;
+				
+				} 
+				
+			} else if (Utils.countLines("config/cookies.txt") < 7) {
+			
+				Main.logger.line();
+				Main.logger.logSingle("Cookies not present in cookies.txt. Want to login to Crunchyroll? (y/n): ");
+				CommandInput.init();
+				String input = CommandInput.getString();
+				
+				switch(input) {
+				case "y":
+					Modules.loginModule.launch();
+					break;
+				case "n":
+					break;
+					default: 
+						break;
+				
+				} 
+				
+			}
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }

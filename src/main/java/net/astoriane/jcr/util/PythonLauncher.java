@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import net.astoriane.jcr.core.module.Modules;
+import net.astoriane.jcr.lib.State;
+
 public class PythonLauncher {
 
 	private static boolean isTerminated = false;
@@ -31,17 +34,33 @@ public class PythonLauncher {
 	}
 
 	public static void launchPythonScript(String pathToScript, String args) {
-		try {
-			Process p = Runtime.getRuntime().exec("python " + pathToScript + " " + args);
-			getConsoleOutput(p);
-			p.waitFor();
-			Thread.sleep(1000);
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		final String path = pathToScript, 
+				argz = args;
+		
+		Thread t = new Thread() {
+			public void run() {
+				Process p;
+				try {
+					p = Runtime.getRuntime().exec("python " + path + " " + argz);
+					getConsoleOutput(p);
+					p.waitFor();
+					isTerminated = true;
+					Thread.sleep(1000);
+					this.interrupt();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+			}
+		};
+		
+		t.start();
+		
+		if(!t.isAlive())
+			Modules.loginModule.setState(State.DONE);
 	}
 
 	public static boolean isProcessTerminated() {
