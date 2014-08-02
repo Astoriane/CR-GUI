@@ -1,12 +1,12 @@
-package net.astoriane.jcr.core.handler;
+package net.astoriane.jcr.lib;
 
-public enum States {
+public enum State {
 
 	STARTUP(0), IDLE(1), WORKING(2), DONE(3), EXIT(4);
 
 	private int id;
 
-	States(int id) {
+	State(int id) {
 		this.id = id;
 	}
 

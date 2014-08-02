@@ -5,19 +5,19 @@ import net.astoriane.jcr.config.Settings;
 import net.astoriane.jcr.core.commands.Command;
 import net.astoriane.jcr.core.commands.Commands;
 import net.astoriane.jcr.core.handler.StartupHandler;
-import net.astoriane.jcr.core.handler.States;
+import net.astoriane.jcr.lib.State;
 import net.astoriane.jcr.lib.Strings;
 import net.astoriane.jcr.util.CommandInput;
 
-public class KernelModule implements Module {
+public class ModuleKernel implements Module {
 
-	private States state;
+	private State state;
 
 	private int id;
 	private String name;
 	private String unlocalizedName;
 
-	public KernelModule(int id, String name) {
+	public ModuleKernel(int id, String name) {
 		this.id = id;
 		this.name = name;
 		setUnlocalizedName("kernelModule");
@@ -26,21 +26,21 @@ public class KernelModule implements Module {
 	@Override
 	public void load() {
 
-		state = States.STARTUP;
+		state = State.STARTUP;
 
 		Main.logger.line();
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_KERNEL_NAME);
 		Main.logger.log(Strings.LOCALE_MODULE_KERNEL_STARTUP);
 		Main.logger.line();
 
-		state = States.IDLE;
+		state = State.IDLE;
 
 	}
 
 	@Override
 	public void loop() {
 
-		state = States.WORKING;
+		state = State.WORKING;
 
 		boolean flag = false;
 
@@ -64,14 +64,14 @@ public class KernelModule implements Module {
 					command.run(array);
 				}
 
-				state = States.IDLE;
+				state = State.IDLE;
 
 			}
 
 			if (command != null) {
 				if (!command.returnValue()) {
 					Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
-					state = States.IDLE;
+					state = State.IDLE;
 				}
 			} else {
 				Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_INVALID);
@@ -79,10 +79,10 @@ public class KernelModule implements Module {
 
 		} else if (array[0].isEmpty()) {
 			Main.logger.error(Strings.LOCALE_MODULE_KERNEL_ERROR_EMPTY);
-			state = States.IDLE;
+			state = State.IDLE;
 
 		} else {
-			state = States.IDLE;
+			state = State.IDLE;
 		}
 
 	}
@@ -90,7 +90,7 @@ public class KernelModule implements Module {
 	@Override
 	public void exit() {
 
-		state = States.EXIT;
+		state = State.EXIT;
 
 	}
 
@@ -99,7 +99,7 @@ public class KernelModule implements Module {
 
 		load();
 
-		while (state == States.IDLE) {
+		while (state == State.IDLE) {
 			loop();
 		}
 

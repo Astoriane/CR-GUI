@@ -7,10 +7,12 @@ import java.io.InputStreamReader;
 public class CommandInput {
 
 	private static String read;
+	
+	private static BufferedReader br;
 
 	public static void init() {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		br = new BufferedReader(new InputStreamReader(System.in));
 
 		String str = null;
 
@@ -21,6 +23,16 @@ public class CommandInput {
 			System.exit(1);
 		}
 
+	}
+	
+	public static void closeReader() {
+		if(br != null)
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 
 	public static String getString() {

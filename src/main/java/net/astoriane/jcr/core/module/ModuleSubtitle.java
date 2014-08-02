@@ -1,19 +1,19 @@
 package net.astoriane.jcr.core.module;
 
 import net.astoriane.jcr.Main;
-import net.astoriane.jcr.core.handler.States;
 import net.astoriane.jcr.core.subtitles.DownloadSubtitles;
+import net.astoriane.jcr.lib.State;
 import net.astoriane.jcr.lib.Strings;
 
-public class SubtitleModule implements Module {
+public class ModuleSubtitle implements Module {
 
-	private static States state = DownloadSubtitles.state;
+	private static State state = DownloadSubtitles.state;
 
 	private int id;
 	private String name;
 	private String unlocalizedName;
 
-	public SubtitleModule(int id, String name) {
+	public ModuleSubtitle(int id, String name) {
 		this.id = id;
 		this.name = name;
 		setUnlocalizedName("subtitleModule");
@@ -22,14 +22,14 @@ public class SubtitleModule implements Module {
 	@Override
 	public void load() {
 
-		state = States.STARTUP;
+		state = State.STARTUP;
 
 		Main.logger.line();
 		Main.logger.log(Strings.LOCALE_SYSTEM_LOAD_MODULE + Strings.LOCALE_MODULE_SUBTITLE_NAME);
 		Main.logger.log(Strings.LOCALE_MODULE_SUBTITLE_STARTUP);
 		Main.logger.line();
 
-		state = States.IDLE;
+		state = State.IDLE;
 
 	}
 
@@ -50,10 +50,10 @@ public class SubtitleModule implements Module {
 	public void launch() {
 		load();
 
-		if (state != States.IDLE)
-			state = States.IDLE;
+		if (state != State.IDLE)
+			state = State.IDLE;
 
-		while (state == States.IDLE) {
+		while (state == State.IDLE) {
 			loop();
 		}
 

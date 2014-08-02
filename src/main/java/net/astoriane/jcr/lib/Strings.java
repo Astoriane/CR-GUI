@@ -33,6 +33,20 @@ public class Strings {
 	public static String LOCALE_MODULE_SUBTITLE_SUCCESS;
 	public static String LOCALE_MODULE_SUBTITLE_ERROR;
 	public static String LOCALE_MODULE_SUBTITLE_ERROR_URL;
+	
+	public static String LOCALE_MODULE_LOGIN_NAME;
+	public static String LOCALE_MODULE_LOGIN_STARTUP;
+	public static String LOCALE_MODULE_LOGIN_PROMPT_USERNAME;
+	public static String LOCALE_MODULE_LOGIN_PROMPT_PASSWORD;
+	public static String LOCALE_MODULE_LOGIN_ERROR;
+	public static String LOCALE_MODULE_LOGIN_ERROR_INVALID_CHARACTER;
+	public static String LOCALE_MODULE_LOGIN_ERROR_INVALID_LOGIN;
+	public static String LOCALE_MODULE_LOGIN_ERROR_SCRIPT;
+	public static String LOCALE_MODULE_LOGIN_SUCCESS;
+	public static String LOCALE_MODULE_LOGIN_FILE_SAVE;
+	public static String LOCALE_MODULE_LOGIN_FILE_SAVE_SUCCESS;
+	public static String LOCALE_MODULE_LOGIN_FILE_SAVE_ERROR;
+	public static String LOCALE_MODULE_LOGIN_DONE;
 
 	// Access keys
 	public static final String SYSTEM_STARTUP = "system.startup";
@@ -65,6 +79,20 @@ public class Strings {
 	public static final String MODULE_SUBTITLE_SUCCESS = "module.subtitle.success";
 	public static final String MODULE_SUBTITLE_ERROR = "module.subtitle.error";
 	public static final String MODULE_SUBTITLE_ERROR_URL = "module.subtitle.errorUrl";
+	
+	public static final String MODULE_LOGIN_NAME = "module.login.name";
+	public static final String MODULE_LOGIN_STARTUP = "module.login.startup";
+	public static final String MODULE_LOGIN_PROMPT_USERNAME = "module.login.promptUsername";
+	public static final String MODULE_LOGIN_PROMPT_PASSWORD = "module.login.promptPassword";
+	public static final String MODULE_LOGIN_ERROR = "module.login.error";
+	public static final String MODULE_LOGIN_ERROR_INVALID_CHARACTER = "module.login.errorInvalidCharacter";
+	public static final String MODULE_LOGIN_ERROR_INVALID_LOGIN = "module.login.errorInvalidLogin";
+	public static final String MODULE_LOGIN_ERROR_SCRIPT = "module.login.errorScript";
+	public static final String MODULE_LOGIN_SUCCESS = "module.login.success";
+	public static final String MODULE_LOGIN_FILE_SAVE = "module.login.saveFile";
+	public static final String MODULE_LOGIN_FILE_SAVE_SUCCESS = "module.login.saveFileSuccess";
+	public static final String MODULE_LOGIN_FILE_SAVE_ERROR = "module.login.saveFileError";
+	public static final String MODULE_LOGIN_DONE = "module.login.done";
 
 	// Default values
 	public static final String SYSTEM_STARTUP_DEFAULT = "Loading up jCrunchyroll...";
@@ -97,5 +125,19 @@ public class Strings {
 	public static final String MODULE_SUBTITLE_SUCCESS_DEFAULT = "File was downloaded and converted successfully";
 	public static final String MODULE_SUBTITLE_ERROR_DEFAULT = "There was an error while downloading your file";
 	public static final String MODULE_SUBTITLE_ERROR_URL_DEFAULT = "Given url could not be parsed.";
+	
+	public static final String MODULE_LOGIN_NAME_DEFAULT = "Login Module";
+	public static final String MODULE_LOGIN_STARTUP_DEFAULT = "jCrunchyroll Login Module v0.1";
+	public static final String MODULE_LOGIN_PROMPT_USERNAME_DEFAULT = "Enter your CR username: ";
+	public static final String MODULE_LOGIN_PROMPT_PASSWORD_DEFAULT = "Enter your CR password: ";
+	public static final String MODULE_LOGIN_ERROR_DEFAULT = "Login Module has encountered an error.";
+	public static final String MODULE_LOGIN_ERROR_INVALID_CHARACTER_DEFAULT = "Error: Invalid character used.";
+	public static final String MODULE_LOGIN_ERROR_INVALID_LOGIN_DEFAULT = "Error. Login invalid.";
+	public static final String MODULE_LOGIN_ERROR_SCRIPT_DEFAULT = "Script encountered an error during launch.";
+	public static final String MODULE_LOGIN_SUCCESS_DEFAULT = "Successfully logged in on Crunchyroll.";
+	public static final String MODULE_LOGIN_FILE_SAVE_DEFAULT = "Saving login cookies to file...";
+	public static final String MODULE_LOGIN_FILE_SAVE_SUCCESS_DEFAULT = "File was saved successfully.";
+	public static final String MODULE_LOGIN_FILE_SAVE_ERROR_DEFAULT = "File could not be saved due to an error.";
+	public static final String MODULE_LOGIN_DONE_DEFAULT = "Done!";
 
 }

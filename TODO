@@ -1,3 +1,9 @@
+FOR TOMORROW:
+
+	* Wrap up the login thingy.
+	* Rewrite subtitle module with commands. (url, launch, exit)
+	* Externalize more strings.
+
 TODO List (Not in order):
 
 	* Module load by user input system. --DONE

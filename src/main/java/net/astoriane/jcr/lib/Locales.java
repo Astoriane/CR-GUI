@@ -54,6 +54,22 @@ public class Locales {
 				entries.add(getNextEntryID(), Strings.MODULE_SUBTITLE_ERROR);
 				entries.add(getNextEntryID(), Strings.MODULE_SUBTITLE_ERROR_URL);
 			}
+			
+			moduleLogin: {
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_NAME);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_STARTUP);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_PROMPT_USERNAME);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_PROMPT_PASSWORD);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_ERROR);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_ERROR_INVALID_CHARACTER);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_ERROR_INVALID_LOGIN);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_ERROR_SCRIPT);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_SUCCESS);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_FILE_SAVE);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_FILE_SAVE_ERROR);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_FILE_SAVE_SUCCESS);
+				entries.add(getNextEntryID(), Strings.MODULE_LOGIN_DONE);
+			}
 		}
 
 		defaults: {
@@ -94,6 +110,22 @@ public class Locales {
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_SUBTITLE_SUCCESS_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_SUBTITLE_ERROR_DEFAULT);
 				defaultValues.add(getNextDefaultID(), Strings.MODULE_SUBTITLE_ERROR_URL_DEFAULT);
+			}
+			
+			moduleLogin: {
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_NAME_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_STARTUP_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_PROMPT_USERNAME_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_PROMPT_PASSWORD_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_ERROR_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_ERROR_INVALID_CHARACTER_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_ERROR_INVALID_LOGIN_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_ERROR_SCRIPT_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_SUCCESS_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_FILE_SAVE_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_FILE_SAVE_ERROR_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_FILE_SAVE_SUCCESS_DEFAULT);
+				defaultValues.add(getNextDefaultID(), Strings.MODULE_LOGIN_DONE_DEFAULT);
 			}
 
 		}
